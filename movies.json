@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "127 Hours",
+    "duration": "90 min",
+    "category": "Biographical",
+    "img": "./../images/127hours.jpeg",
+    "playing": true
+  },
+  {
+    "id": 2,
+    "title": "1997",
+    "duration": "2h",
+    "category": "war",
+    "img": "./../images/1997.jpeg",
+    "playing": false
+  },
+  {
+    "id": 3,
+    "title": "Alien",
+    "duration": "2h30m",
+    "category": "fiction",
+    "img": "/../images/alien.jpeg",
+    "playing": true
+  },
+  {
+    "id": 4,
+    "title": "American Beauty",
+    "duration": "1h40min",
+    "category": "Drama",
+    "img": "./../images/americanbeauty.jpeg",
+    "playing": false
+  },
+  {
+    "id": 5,
+    "title": "Avatar",
+    "duration": "2h40m",
+    "category": "Fiction",
+    "img": "./../images/avatar.jpeg",
+    "playing": true
+  },
+  {
+    "id": 6,
+    "title": "Barbie",
+    "duration": "1h54m",
+    "category": "Fiction",
+    "img": "./../images/barbie.jpeg",
+    "playing": false
+  },
+  {
+    "id": 7,
+    "title": "Corpse Bride",
+    "duration": "1h50m",
+    "category": "Animation",
+    "img": "./../images/corpsebrid.jpeg",
+    "playing": true
+  },
+  {
+    "id": 8,
+    "title": "Cruela",
+    "duration": "2h14m",
+    "category": "Fiction",
+    "img": "./../images/cruela.jpeg",
+    "playing": false
+  },
+  {
+    "id": 9,
+    "title": "The Devil Wears Prada",
+    "duration": "1h50m",
+    "category": "Fiction",
+    "img": "./../images/devilprada.jpeg",
+    "playing": true
+  },
+  {
+    "id": 10,
+    "title": "Dune",
+    "duration": "2h35m",
+    "category": "Fantasy",
+    "img": "./../images/dune.jpeg",
+    "playing": false
+  },
+  {
+    "id": 11,
+    "title": "Fury",
+    "duration": "2h14m",
+    "category": "War",
+    "img": "./../images/fury.jpeg",
+    "playing": true
+  },
+  {
+    "id": 12,
+    "title": "Gravity",
+    "duration": "1h31m",
+    "category": "Sy/Fy",
+    "img": "./../images/gravity.jpeg",
+    "playing": true
+  },
+  {
+    "id": 13,
+    "title": "Interstellar",
+    "duration": "2h50m",
+    "category": "Sy/Fy",
+    "img": "./../images/interstellar.jpeg",
+    "playing": false
+  },
+  {
+    "id": 14,
+    "title": "I Tonya",
+    "duration": "2h",
+    "category": "Biographical",
+    "img": "./../images/itonya.jpeg",
+    "playing": true
+  },
+  {
+    "id": 15,
+    "title": "Joker",
+    "duration": "2h",
+    "category": "Fiction",
+    "img": "./../images/joker.jpeg",
+    "playing": false
+  },
+  {
+    "id": 16,
+    "title": "La la land",
+    "duration": "2h8m",
+    "category": "Fiction",
+    "img": "./../images/lalaland.jpeg",
+    "playing": true
+  },
+  {
+    "id": 17,
+    "title": "Oppenheimer",
+    "duration": "3h",
+    "category": "documentary",
+    "img": "./../images/oppenheimer.jpeg",
+    "playing": true
+  },
+  {
+    "id": 18,
+    "title": "Pretty Woman",
+    "duration": "1h40m",
+    "category": "fiction",
+    "img": "./../images/prettywoman.jpeg",
+    "playing": false
+  },
+  {
+    "id": 19,
+    "title": "Shape of Water",
+    "duration": "2h3m",
+    "category": "Sy/Fy",
+    "img": "./../images/shapeofwater.jpeg",
+    "playing": false
+  },
+  {
+    "id": 20,
+    "title": "Spirited Away",
+    "duration": "2h5m",
+    "category": "Animation",
+    "img": "./../images/spiritedaway.jpeg",
+    "playing": true
+  },
+  {
+    "id": 21,
+    "title": "The Boy in Pajama",
+    "duration": "1h34m",
+    "category": "Documentary",
+    "img": "./../images/theboyinpajama.jpeg",
+    "playing": false
+  },
+  {
+    "id": 22,
+    "title": "The Revenant",
+    "duration": "2h36",
+    "category": "Fiction",
+    "img": "./../images/therevenant.jpeg",
+    "playing": true
+  },
+  {
+    "id": 23,
+    "title": "The Wolf of Wall Stree",
+    "duration": "2h45m",
+    "category": "Fiction",
+    "img": "./../images/thewolf.jpeg",
+    "playing": false
+  },
+  {
+    "id": 24,
+    "title": "Venom",
+    "duration": "2h20m",
+    "category": "Sy/Fy",
+    "img": "./../images/venom01.jpeg",
+    "playing": true
+  },
+  {
+    "id": 25,
+    "title": "Venom 2",
+    "duration": "1h37",
+    "category": "Sy/Fy",
+    "img": "./../images/venom02.jpeg",
+    "playing": false
+  }
+]

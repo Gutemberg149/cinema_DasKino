@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+}
+
+a {
+  color: black;
+}
+button {
+  border: none;
+}
+
+/* background layout */
+#fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #221f1fd1;
+  z-index: 99;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./../images/avatar03.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+}
+
+header nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+}
+header nav .logo {
+  width: 8rem;
+  height: 3rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+}
+header nav .logo p {
+  color: white;
+  font-size: 1.5rem;
+}
+header nav .logo span {
+  color: red;
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header nav ul li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  color: red;
+}
+
+header nav ul .signIn_li {
+  width: 4.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  background-color: red;
+}
+header nav ul .signIn_li:hover {
+  background-color: white;
+}
+header nav ul li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  color: red;
+}
+
+header .bottom_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  border: none;
+}
+
+header .bottom_header .bottom_header_left {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 27%;
+}
+
+header .bottom_header .bottom_header_left img {
+  width: 150px;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+header .bottom_header .bottom_header_left .bottom_header_left_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header .bottom_header .bottom_header_left .btn_moreInfo {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+header .bottom_header .bottom_header_left .btn_moreInfo:hover {
+  background-color: white;
+  color: red;
+}
+
+header .bottom_header .bottom_header_left .timeTable {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+header .bottom_header .bottom_header_right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+header .bottom_header .bottom_header_right p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+header .bottom_header .bottom_header_right .playTrailer {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 9px solid rgba(255, 0, 0, 0.433);
+  background-color: white;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+header .bottom_header .bottom_header_right .playTrailer:hover {
+  background-color: red;
+}
+header .bottom_header .bottom_header_right .playTrailer:hover > i {
+  color: white;
+}
+header .bottom_header .bottom_header_right .playTrailer i {
+  color: red;
+}
+
+header #modal {
+  background-color: whitesmoke;
+  left: 50%;
+  top: 50%;
+  width: 50rem;
+  max-width: 90%;
+  height: 28rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.795) 0px 15px 25px;
+  background-color: black;
+  z-index: 100;
+}
+header #modal .modal_header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  background-color: black;
+}
+header #modal .modal_header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+header #modal .modal_header i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+header #modal .modal_header i:hover {
+  color: red;
+}
+
+header #modal .video_container {
+  width: 100%;
+}
+/* pointer-events NONE  allows to click every on the screem */
+#fade.hide,
+#modal.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* pointer-events  ALL prevents us to click anywhere on the screem */
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modal.hide {
+  top: 0;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    height: 45vh;
+  }
+  header nav .logo {
+    width: 4rem;
+    height: 2rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    margin-left: 0.51rem;
+  }
+  header nav .logo p {
+    color: white;
+    font-size: 0.8rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 0.8rem;
+  }
+  header nav ul {
+    display: flex;
+    margin-right: 0rem;
+  }
+  header nav ul li {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  header nav ul .signIn_li {
+    width: 3.3rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+    background-color: red;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  header .bottom_header .bottom_header_left {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 11rem;
+  }
+  header .bottom_header .bottom_header_left img {
+    width: 90px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  header .bottom_header .bottom_header_left .bottom_header_left_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  header .bottom_header .bottom_header_left .btn_moreInfo {
+    width: 3.8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.2rem;
+    font-size: 0.71rem;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    border: 2px soliod red;
+  }
+  header .bottom_header .bottom_header_left .timeTable {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 0rem;
+  }
+  header .bottom_header .bottom_header_right p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  header .bottom_header .bottom_header_right .playTrailer {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 9px solid rgba(255, 0, 0, 0.433);
+    background-color: white;
+    cursor: pointer;
+  }
+}
+/* @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+} */
+
+/* @media only screen and (min-device-width: 901px) and (max-device-width: 1500px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* --------------------------------Here starts the Main -------------------------------------------------- */
+
+main {
+  background-color: black;
+  height: auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+main .topMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .topMain .moviesFilter {
+  margin-top: 1rem;
+}
+main .topMain .moviesFilter span {
+  color: white;
+  font-size: 0.8rem;
+  margin-left: 0.9rem;
+  cursor: pointer;
+}
+main .topMain .moviesFilter span:hover {
+  color: red;
+}
+main .topMain .searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+main .topMain .searchContainer .alertOfInputError {
+  margin-right: 1rem;
+  display: none;
+}
+main .topMain .searchContainer .alertOfInputError p {
+  color: red;
+  font-size: 0.8rem;
+}
+main .topMain .searchContainer .search {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  height: 1.5rem;
+}
+
+main .topMain .searchContainer .search input {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding-left: 0.3rem;
+}
+main .topMain .searchContainer .search input:focus {
+  outline: none;
+}
+main .topMain .searchContainer .search .fa-magnifying-glass {
+  color: rgb(215, 212, 212);
+  margin-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+main .topMain .searchContainer .enter {
+  border: 1px solid gray;
+  background-color: transparent;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  cursor: pointer;
+}
+main .topMain .searchContainer .enter:hover {
+  background-color: rgb(215, 212, 212);
+}
+
+main .topMain .searchContainer .enter p {
+  color: rgb(236, 236, 236);
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+main .topMain .searchContainer .enter:hover > p {
+  color: black;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+main .lineAcross {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    red,
+    red,
+    yellow,
+    rgba(255, 255, 0, 0.039)
+  );
+  border-image-slice: 1;
+  width: 100%;
+  padding: 0rem 1rem;
+  margin-top: 0rem;
+}
+
+/* ----------Main movies container-------- */
+
+main .moviePlayinContainer {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+main .moviePlayinContainer .movieBoxContainer {
+  width: 15%;
+  height: 20rem;
+  box-shadow: rgba(149, 157, 165, 0.304) 0px 8px 24px;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+main .moviePlayinContainer .movieBoxContainer .posterContainer {
+  height: 80%;
+  background-size: cover;
+}
+
+main .moviePlayinContainer .movieBoxContainer:hover > .posterContainer {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in;
+}
+main .moviePlayinContainer .movieBoxContainer .infoBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+
+main .moviePlayinContainer .movieBoxContainer .infoBox .title {
+  color: rgb(226, 225, 225);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(226, 225, 225);
+  height: 1rem;
+  margin-top: 0.3rem;
+}
+main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .duration,
+.typeOfMovie {
+  font-size: 0.8rem;
+  color: rgb(226, 225, 225);
+  font-weight: 100;
+}
+main
+  .moviePlayinContainer
+  .movieBoxContainer
+  .infoBox
+  .bottomInfo
+  .barDivision {
+  border-left: 0.5px solid rgb(226, 225, 225);
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  main {
+    background-color: black;
+    height: auto;
+    padding: 0 0.5rem;
+  }
+  main .moviePlayinContainer {
+    margin-top: 1rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer {
+    width: 45%;
+    height: 60vh;
+    box-shadow: rgba(149, 157, 165, 0.304) 0px 8px 24px;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+}
+/* @media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+} */
+
+/* @media only screen and (min-device-width: 901px) and (max-device-width: 1500px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* --------------------------------Here starts the Footer -------------------------------------------------- */
+footer {
+  height: 18vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+footer .logoContainer .logo {
+  width: 8rem;
+  height: 3rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+}
+footer .logoContainer .logo p {
+  color: white;
+  font-size: 1.5rem;
+}
+footer .logoContainer .logo span {
+  color: red;
+  font-size: 1.5rem;
+}
+
+footer .contactContainer:hover {
+  color: red;
+}
+
+footer .SocialMediaContainer {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .SocialMediaContainer i {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer .SocialMediaContainer i:hover {
+  color: red;
+}

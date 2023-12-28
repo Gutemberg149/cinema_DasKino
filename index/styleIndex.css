@@ -10,6 +10,7 @@
 
 a {
   color: black;
+  text-decoration: none;
 }
 button {
   border: none;
@@ -29,7 +30,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url("./../images/avatar03.jpeg");
+  background-image: url("./../imgCover/avatar03.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 75vh;
@@ -80,17 +81,32 @@ header nav ul li {
 header nav ul li:hover {
   color: red;
 }
+header nav ul li i:hover {
+  color: red;
+}
 
-header nav ul .signIn_li {
+header nav ul .signInBtn {
   width: 4.5rem;
   height: 1.5rem;
-  display: flex;
+
   align-items: center;
   justify-content: center;
   border-radius: 0.2rem;
   background-color: red;
 }
-header nav ul .signIn_li:hover {
+header nav ul .signOutBtn {
+  width: 5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  background-color: red;
+}
+
+header nav ul .signOutBtn:hover {
+  background-color: white;
+}
+header nav ul .signInBtn:hover {
   background-color: white;
 }
 header nav ul li a {
@@ -103,7 +119,12 @@ header nav ul li a {
 header nav ul li a:hover {
   color: red;
 }
-
+.userNameNavBar:hover {
+  color: white;
+}
+.userNameNavBar {
+  cursor: auto;
+}
 header .bottom_header {
   display: flex;
   align-items: center;
@@ -241,14 +262,14 @@ header #modal .modal_header i:hover {
 header #modal .video_container {
   width: 100%;
 }
-/* pointer-events NONE  allows to click every on the screem */
+/* pointer-events "NONE" allows to click every on the screem */
 #fade.hide,
 #modal.hide {
   opacity: 0;
   pointer-events: none;
 }
 
-/* pointer-events  ALL prevents us to click anywhere on the screem */
+/* pointer-events "ALL" prevents us to click anywhere on the screem */
 #fade,
 #modal {
   transition: 0.5s;
@@ -292,7 +313,7 @@ header #modal .video_container {
     margin-right: 1rem;
     cursor: pointer;
   }
-  header nav ul .signIn_li {
+  header nav ul .signInBtn {
     width: 3.3rem;
     height: 1.5rem;
     display: flex;
@@ -389,7 +410,7 @@ main .topMain .moviesFilter {
   margin-top: 1rem;
 }
 main .topMain .moviesFilter span {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 0.8rem;
   margin-left: 0.9rem;
   cursor: pointer;
@@ -465,13 +486,7 @@ main .topMain .searchContainer .enter:hover > p {
 
 main .lineAcross {
   border-bottom: 1px solid transparent;
-  border-image: linear-gradient(
-    0.25turn,
-    red,
-    red,
-    yellow,
-    rgba(255, 255, 0, 0.039)
-  );
+  border-image: linear-gradient(0.25turn, red, red, yellow, rgba(255, 255, 0, 0.039));
   border-image-slice: 1;
   width: 100%;
   padding: 0rem 1rem;
@@ -501,13 +516,17 @@ main .moviePlayinContainer .movieBoxContainer {
 
 main .moviePlayinContainer .movieBoxContainer .posterContainer {
   height: 80%;
-  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+main .moviePlayinContainer .movieBoxContainer .posterContainer img {
+  width: 100%;
 }
 
-main .moviePlayinContainer .movieBoxContainer:hover > .posterContainer {
-  transform: scale(1.05);
-  transition: all 0.3s ease-in;
+main .moviePlayinContainer .movieBoxContainer:hover {
+  box-shadow: rgba(251, 251, 252, 0.651) 0px 8px 24px;
 }
+
 main .moviePlayinContainer .movieBoxContainer .infoBox {
   display: flex;
   flex-direction: column;
@@ -518,7 +537,7 @@ main .moviePlayinContainer .movieBoxContainer .infoBox {
 main .moviePlayinContainer .movieBoxContainer .infoBox .title {
   color: rgb(226, 225, 225);
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo {
   display: flex;
@@ -531,14 +550,9 @@ main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .duration,
 .typeOfMovie {
   font-size: 0.8rem;
   color: rgb(226, 225, 225);
-  font-weight: 100;
+  font-weight: 300;
 }
-main
-  .moviePlayinContainer
-  .movieBoxContainer
-  .infoBox
-  .bottomInfo
-  .barDivision {
+main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .barDivision {
   border-left: 0.5px solid rgb(226, 225, 225);
 }
 
@@ -585,6 +599,7 @@ footer .logoContainer .logo {
   justify-content: center;
   border-radius: 3rem;
   margin-left: 2rem;
+  cursor: pointer;
 }
 footer .logoContainer .logo p {
   color: white;
@@ -594,9 +609,9 @@ footer .logoContainer .logo span {
   color: red;
   font-size: 1.5rem;
 }
-
-footer .contactContainer:hover {
-  color: red;
+footer .contactContainer {
+  color: white;
+  cursor: pointer;
 }
 
 footer .SocialMediaContainer {
@@ -607,6 +622,7 @@ footer .SocialMediaContainer {
 }
 
 footer .SocialMediaContainer i {
+  color: white;
   margin: 0 1rem;
   font-size: 1.5rem;
   cursor: pointer;
@@ -615,3 +631,10 @@ footer .SocialMediaContainer i {
 footer .SocialMediaContainer i:hover {
   color: red;
 }
+
+/* .testediv {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: balck;
+} */

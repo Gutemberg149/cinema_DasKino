@@ -25,18 +25,25 @@
         </div>
 
         <ul>
-          <li>Home</li>
-          <li>Contact us</li>
-          <li>Movies</li>
-          <li><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li class="signIn_li"><a href="#">Sign in</a></li>
+          <a href="../contact/contact.html">
+            <li>Contact us</li>
+          </a>
+
+          <a href="../logIn_signUp/login.html">
+            <li class="signInBtn">Sign in</li>
+          </a>
+
+          <li class="signOutBtn">Sign out</li>
+          <li class="userNameNavBar"></li>
         </ul>
       </nav>
+
       <div class="bottom_header">
         <div class="bottom_header_left">
-          <img src="./../images/avatarTitle.jpg" alt="" />
+          <img src="./../imgCover/avatarTitle.jpg" alt="" />
           <div class="bottom_header_left_bottom">
-            <button class="btn_moreInfo">More info</button>
+            <a href="../moviePage/moviePage.html"><button class="btn_moreInfo">More info</button></a>
+
             <div class="timeTable">
               <p>January 20 2024</p>
               <p>MAX 3D</p>
@@ -49,6 +56,7 @@
           <div class="playTrailer"><i class="fa-solid fa-play"></i></div>
         </div>
       </div>
+
       <div id="modal" class="hide">
         <div class="modal_header">
           <p>Avatar The Way Of Water</p>
@@ -77,6 +85,7 @@
           <div class="enter"><p>ENTER</p></div>
         </div>
       </div>
+
       <div class="alertOfInputError">
         <p>Enter a valid title</p>
       </div>
@@ -84,7 +93,9 @@
 
       <div class="moviePlayinContainer">
         <!-- <div class="movieBoxContainer">
-          <div class="posterContainer"></div>
+          <a href="../moviePage/moviePage.html">
+            <div class="posterContainer"></div>
+          </a>
           <div class="infoBox">
             <div class="title">127 hours</div>
             <div class="bottomInfo">
@@ -96,7 +107,6 @@
         </div> -->
       </div>
     </main>
-
     <footer>
       <div class="logoContainer">
         <div class="logo">
@@ -104,13 +114,18 @@
           <span>Kino</span>
         </div>
       </div>
-      <div class="contactContainer">Contact us</div>
+      <a class="contactContainer" href="../contact/contact.html">
+        <p>Contact us</p>
+      </a>
       <div class="SocialMediaContainer">
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+
+        <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+
+        <a href="https://www.linkedin.com/mynetwork/"> <i class="fa-brands fa-linkedin"></i></a>
       </div>
     </footer>
+
     <script src="./indexJS.js" type="module"></script>
   </body>
 </html>

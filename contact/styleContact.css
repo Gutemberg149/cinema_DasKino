@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+}
+
+a {
+  color: black;
+}
+
+button {
+  border: none;
+}
+
+body {
+  background-image: linear-gradient(
+    90deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(0deg 91% 5%) 16%,
+    hsl(0deg 95% 9%) 23%,
+    hsl(0deg 94% 13%) 28%,
+    hsl(0deg 93% 18%) 32%,
+    hsl(0deg 95% 22%) 35%,
+    hsl(0deg 94% 26%) 38%,
+    hsl(0deg 95% 31%) 40%,
+    hsl(0deg 94% 35%) 42%,
+    hsl(0deg 94% 40%) 44%,
+    hsl(0deg 95% 44%) 46%,
+    hsl(0deg 94% 48%) 48%,
+    hsl(0deg 95% 44%) 50%,
+    hsl(0deg 95% 40%) 52%,
+    hsl(0deg 96% 35%) 54%,
+    hsl(0deg 96% 31%) 57%,
+    hsl(0deg 97% 27%) 59%,
+    hsl(0deg 98% 22%) 62%,
+    hsl(0deg 98% 18%) 66%,
+    hsl(0deg 97% 14%) 70%,
+    hsl(0deg 100% 9%) 76%,
+    hsl(0deg 100% 5%) 84%,
+    hsl(0deg 100% 1%) 100%
+  );
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 9vh;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  width: 8rem;
+  height: 3rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+header nav .logo p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+header nav .logo span {
+  color: red;
+  font-size: 1.5rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header nav ul li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+}
+
+header nav ul li:hover {
+  color: red;
+}
+
+header nav ul .signIn_li {
+  width: 4.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  background-color: red;
+}
+
+header nav ul .signIn_li:hover {
+  background-color: white;
+}
+
+header nav ul li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+/* --------------------------------Here starts the Main -------------------------------------------------- */
+main {
+  display: flex;
+  height: 80vh;
+  padding: 1rem 4rem;
+}
+.left {
+  width: 55%;
+}
+
+.left h3 {
+  font-size: 2rem;
+  color: white;
+}
+.left p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+
+  outline: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  color: aliceblue;
+  font-size: 1rem;
+  bottom: 0.2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  transform: translateY(-30px) scale(0.8);
+  color: white;
+  width: fit-content;
+  height: 0.8rem;
+  border-radius: 1px;
+  font-size: 0.8rem;
+}
+input:focus {
+  outline: none;
+}
+
+.textAreaBox textarea {
+  width: 100%;
+  height: 8.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.right {
+  width: 40%;
+  margin-left: 2rem;
+}
+
+.right {
+  display: flex;
+}
+.right .rightSide1 {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .rightSide1 .innerBox {
+  position: absolute;
+  width: 25rem;
+  height: 18rem;
+  background-color: rgb(24, 24, 24);
+  left: 0;
+  padding: 2rem;
+}
+.right .rightSide1 .innerBox h4 {
+  color: aliceblue;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+.right .rightSide1 .innerBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.right .rightSide1 .innerBox div i {
+  color: aliceblue;
+  margin-right: 0.9rem;
+  font-size: 1.2rem;
+}
+.right .rightSide1 .innerBox div p {
+  color: aliceblue;
+  margin-right: 0.9rem;
+  font-size: 1rem;
+  font-weight: 200;
+}
+/* .right .rightSide1 .innerBox{} */
+
+.right .rightSide2 {
+  width: 30%;
+  height: 100%;
+  background-color: hsl(0deg 95% 44%);
+}
+
+/* --------------------------------Here starts the Footer -------------------------------------------------- */
+footer {
+  height: 18vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+  background-color: black;
+}
+
+footer .logoContainer .logo {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+footer .logoContainer .logo p {
+  color: white;
+  font-size: 1.5rem;
+}
+footer .logoContainer .logo span {
+  color: red;
+  font-size: 1.5rem;
+}
+
+footer .contactContainer:hover {
+  color: red;
+  cursor: pointer;
+}
+
+footer .SocialMediaContainer {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .SocialMediaContainer i {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer .SocialMediaContainer i:hover {
+  color: red;
+}

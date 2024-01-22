@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="stylePayment.css" />
+    <title>Das Kino</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index/index.html">
+          <div class="logo">
+            <p>Das</p>
+            <span>Kino</span>
+          </div>
+        </a>
+
+        <ul>
+          <a href="../index/index.html">
+            <li>Home</li>
+          </a>
+
+          <a href="../contact/contact.html">
+            <li>Contact us</li>
+          </a>
+
+          <a href="../logIn_signUp/login.html">
+            <li class="signInBtn">Sign in</li>
+          </a>
+
+          <li class="signOutBtn">Sign out</li>
+          <li class="userNameNavBar"></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="mainInfoContainer">
+        <div class="topBox">
+          <div><img src="../Images/imgCover/americanB.webp" alt="" /></div>
+
+          <div class="infoSide">
+            <div class="title">Acqua man</div>
+            <div class="address">Rua frei caneca, 245 São Paulo</div>
+          </div>
+        </div>
+
+        <div class="middleBox">
+          <div class="date">
+            <span class="day">06/</span>
+            <span class="mes">11/</span>
+            <span class="ano">2024</span>
+          </div>
+          <div class="time">16:30</div>
+        </div>
+
+        <div class="bottomBox">
+          <div class="qtdIngressos">
+            <span>1</span>
+            <p>Ingresso(s)</p>
+          </div>
+
+          <p class="poltronas">Poltronas</p>
+
+          <div class="seats">
+            <!-- <div class="seat">R03</div> -->
+          </div>
+
+          <div class="numbOfTickets">
+            <p class="tag">Tickets:</p>
+            <p class="ticketQtd"></p>
+          </div>
+          <div class="chooseTicketContainer">
+            <span class="chooseTicket">Escolha o tipo de ingresso</span>
+          </div>
+
+          <div class="typeOFtickets">
+            <div class="containerTypeTicket">
+              <span class="typeTicket">Inteira</span>
+
+              <div class="boxNumbOfticket">
+                <div class="calc plusInteira">+</div>
+                <span class="numberInteira"></span>
+                <div class="calc minusInteira">-</div>
+              </div>
+              <span class="ticketPrice">R$40,00</span>
+            </div>
+            <div class="containerTypeTicket">
+              <span class="typeTicket">Meia</span>
+
+              <div class="boxNumbOfticket">
+                <div class="calc plusMeia">+</div>
+                <span class="numberMeia"></span>
+                <div class="calc minusMeia">-</div>
+              </div>
+              <span class="ticketPrice">R$20,00</span>
+            </div>
+          </div>
+
+          <div class="total">
+            <p class="totalCompra">Total da compra</p>
+            <p class="finalBill">R$00,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="paymentContainer">
+        <div class="paymentContainerOverLay"></div>
+        <h2>Pagamento</h2>
+        <p class="pgIntructions">
+          Para finalizar, você deve confirmar seus dados de compra e informar os dados de seu cartão. Após este passo, sua compra não poderá ser mais alterada.
+        </p>
+
+        <details>
+          <summary>Cartão de Credito</summary>
+          <div class="cards">
+            <img src="../Images/imgCredCard/diners-club.jpg" alt="" />
+            <img src="../Images/imgCredCard/elocard.png" alt="" />
+            <img src="../Images/imgCredCard/mastercard.png" alt="" />
+            <img src="../Images/imgCredCard/visa.jpeg" alt="" />
+          </div>
+          <form class="cartaoForm">
+            <div class="cardNumber">
+              <span>Número do Cartão</span>
+              <input id="cCardnumber" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required />
+            </div>
+
+            <div class="expiration">
+              <span>Data de validade</span>
+              <div class="inputDate">
+                <input id="cardMonthValid" type="text" name="month" placeholder="MM" maxlength="2" size="2" />
+                <span>/</span>
+                <input id="cardYearValid" type="text" name="year" placeholder="YY" maxlength="2" size="2" />
+              </div>
+            </div>
+            <div class="cvc_cvv">
+              <span>cvc/cvv</span>
+              <input id="cvc" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="3" placeholder="xxx" required />
+            </div>
+          </form>
+
+          <div class="totalApagar">
+            <p class="totalText">total a pagar</p>
+            <p class="valorTotal">R$80,00</p>
+          </div>
+        </details>
+
+        <div class="bottomPage">
+          <p class="warning">Ao menos uma das informações acima estar errada.</p>
+          <!-- <a href="."></a> -->
+          <button class="finalizar">finalizar compra</button>
+
+          <div class="securityBox">
+            <i class="fa-solid fa-lock"></i>
+            <p>Compra 100% segura</p>
+          </div>
+        </div>
+        <a href="../logIn_signUp/login.html"></a>
+      </div>
+    </main>
+    <footer>
+      <a href="../index/index.html">
+        <div class="logo">
+          <p>Das</p>
+          <span>Kino</span>
+        </div>
+      </a>
+      <a href="../contact/contact.html">
+        <div class="contact">Contact us</div>
+      </a>
+      <div class="SocialMediaContainer">
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+        <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+
+        <a href="https://www.linkedin.com/mynetwork/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <script src="./checkoutScript.js" type="module"></script>
+  </body>
+</html>

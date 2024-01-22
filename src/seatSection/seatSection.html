@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleSeatSection.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Das Kino</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index/index.html">
+          <div class="logo">
+            <p>Das</p>
+            <span>Kino</span>
+          </div>
+        </a>
+        <ul>
+          <a href="../index/index.html">
+            <li>Home</li>
+          </a>
+          <a href="../contact/contact.html">
+            <li>Contact us</li>
+          </a>
+          <a href="../logIn_signUp/login.html">
+            <li class="signInBtn">Sign in</li>
+          </a>
+
+          <li class="signOutBtn">Sign out</li>
+          <li class="userNameNavBar"></li>
+        </ul>
+      </nav>
+      <div class="moveName"><p>Cruella</p></div>
+    </header>
+
+    <main>
+      <div class="showTime">
+        <p class="top">SHOWTIME</p>
+        <div class="timeTable">
+          <p class="dayOftheWeek">Mon,</p>
+          <p class="Month">Dec</p>
+          <p class="dayOftheMonth">04,</p>
+          <p class="time">14:45</p>
+        </div>
+      </div>
+
+      <h2>CHOOSE YOUR SEATS</h2>
+      <div class="ticketLegend">
+        <div class="legendContainer">
+          <div class="square selected">S</div>
+          <p class="titleLegend">Select</p>
+        </div>
+
+        <div class="legendContainer">
+          <div class="square unavailable">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <p class="titleLegend">Unavailable</p>
+        </div>
+
+        <div class="legendContainer">
+          <div class="square"><i class="fa-regular fa-user"></i></div>
+          <p class="titleLegend">Available</p>
+        </div>
+
+        <div class="legendContainer">
+          <div class="square"><i class="fa-solid fa-wheelchair"></i></div>
+          <p class="titleLegend">Wheelchair space</p>
+        </div>
+
+        <div class="legendContainer">
+          <div class="square premiun">P</div>
+          <p class="titleLegend">Premiun</p>
+        </div>
+      </div>
+
+      <section class="screenContainer">
+        <div class="screen"><p>Screen</p></div>
+      </section>
+
+      <section id="outerSeatContainer">
+        <div class="seatContainer">
+          <div class="chair">
+            <div class="row">
+              <span class="rowNumber">
+                <p>1</p>
+              </span>
+              <span class="rowNumber">
+                <p>2</p>
+              </span>
+              <span class="rowNumber">
+                <p>3</p>
+              </span>
+              <span class="rowNumber">
+                <p>4</p>
+              </span>
+              <span class="rowNumber">
+                <p>5</p>
+              </span>
+              <span class="rowNumber">
+                <p>6</p>
+              </span>
+              <span class="rowNumber">
+                <p>7</p>
+              </span>
+              <span class="rowNumber">
+                <p>8</p>
+              </span>
+              <span class="rowNumber">
+                <p>9</p>
+              </span>
+              <span class="rowNumber">
+                <p>10</p>
+              </span>
+              <span class="rowNumber">
+                <p>11</p>
+              </span>
+            </div>
+            <div class="row">
+              <span>J</span>
+
+              <li class="seat" id="J-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-02">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-03">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="J-11">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>J</span>
+            </div>
+            <div class="row">
+              <span>K</span>
+
+              <li class="seat" id="K-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+
+              <li class="seat" id="K-02">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-03">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="K-11">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>K</span>
+            </div>
+            <div class="row">
+              <span>L</span>
+
+              <li class="seat" id="L-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-02">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-03">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="L-11">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>L</span>
+            </div>
+            <div class="row">
+              <span>M</span>
+
+              <li class="seat" id="M-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-02">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-03">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="M-11">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>M</span>
+            </div>
+
+            <div class="space"></div>
+
+            <div class="row">
+              <span>N</span>
+
+              <li class="seat" id="N-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="N-02">
+                <div class="armLeft"></div>
+                <div class="square"><i class="fa-solid fa-wheelchair"></i></div>
+                <div class="armRight"></div>
+              </li>
+
+              <li class="seatEmpty" id="N-seatEmpty">
+                <div class="armLeft"></div>
+                <p></p>
+                <div class="armRight"></div>
+              </li>
+
+              <li class="seat" id="N-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+
+              <li class="seat" id="N-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="N-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="N-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="N-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="N-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="N-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="premiun" id="N-11-Premium">
+                <div class="armLeft"></div>
+                <p>P</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>N</span>
+            </div>
+            <div class="row">
+              <span>O</span>
+
+              <li class="seat" id="O-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="O-02">
+                <div class="armLeft"></div>
+                <div class="square"><i class="fa-solid fa-wheelchair"></i></div>
+                <div class="armRight"></div>
+              </li>
+              <li class="seatEmpty" id="O-seatEmpty">
+                <div class="armLeft"></div>
+                <p></p>
+                <div class="armRight"></div>
+              </li>
+
+              <li class="seat" id="O-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="O-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="O-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="O-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="O-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="O-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="O-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="premiun" id="O-11-Premium">
+                <div class="armLeft"></div>
+                <p>P</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>O</span>
+            </div>
+            <div class="row">
+              <span>P</span>
+
+              <li class="seat" id="P-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="P-02">
+                <div class="armLeft"></div>
+                <div class="square"><i class="fa-solid fa-wheelchair"></i></div>
+                <div class="armRight"></div>
+              </li>
+              <li class="seatEmpty" id="P-seatEmpty">
+                <div class="armLeft"></div>
+                <p></p>
+                <div class="armRight"></div>
+              </li>
+
+              <li class="seat" id="P-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="P-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="P-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="P-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="P-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="P-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="P-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="premiun" id="P-11-Premium">
+                <div class="armLeft"></div>
+                <p>P</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>P</span>
+            </div>
+            <div class="row">
+              <span>Q</span>
+
+              <li class="seat" id="Q-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-02">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-03">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="Q-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="premiun" id="Q-11-Premium">
+                <div class="armLeft"></div>
+                <p>P</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>Q</span>
+            </div>
+            <div class="row">
+              <span>R</span>
+
+              <li class="seat" id="R-01">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-02">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-03">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-04">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-05">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-06">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-07">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-08">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-09">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="seat" id="R-10">
+                <div class="armLeft"></div>
+                <p>S</p>
+                <div class="armRight"></div>
+              </li>
+              <li class="premiun" id="R-11-Premium">
+                <div class="armLeft"></div>
+                <p>P</p>
+                <div class="armRight"></div>
+              </li>
+
+              <span>R</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="seatsSelected">
+        <div class="selectedContainer">
+          <p class="titleSelected">Seats Selected</p>
+          <p class="selected">None Selected</p>
+        </div>
+        <div class="btnContainer">
+          <div class="overLayBtnContinue"></div>
+
+          <a href="../checkOut/checkOutPayment.html">
+            <button class="btnContinue">Continue to payment</button>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="logoContainer">
+        <a href="../index/index.html">
+          <div class="logo">
+            <p>Das</p>
+            <span>Kino</span>
+          </div>
+        </a>
+      </div>
+
+      <a class="contactContainer" href="../contact/contact.html">
+        <p>Contact us</p>
+      </a>
+
+      <div class="SocialMediaContainer">
+        <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+
+        <a href="https://www.facebook.com"> <i class="fa-brands fa-facebook"></i></a>
+
+        <a href="https://www.linkedin.com/mynetwork/"> <i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+    <script src="./seatSection.js" type="module"></script>
+  </body>
+</html>

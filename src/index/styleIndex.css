@@ -1,0 +1,884 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+
+/* background layout */
+#fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: #221f1fd1;
+  z-index: 99;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("../Images/imgCover/avatar03.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75vh;
+  /* width: 100vw; */
+}
+
+header nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+header nav .logo {
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  border: 1px solid red;
+}
+header nav .logo p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+header nav .logo span {
+  color: red;
+  font-size: 1.3rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header nav ul li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  color: red;
+}
+
+header nav ul .signInBtn {
+  width: 4.5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  background-color: red;
+}
+
+header nav ul .signInBtn:hover {
+  background-color: white;
+}
+
+header nav ul .signOutBtn {
+  width: 5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  background-color: red;
+}
+
+header nav ul .signOutBtn:hover {
+  background-color: white;
+}
+
+header nav ul li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  color: red;
+}
+.userNameNavBar:hover {
+  color: white;
+}
+.userNameNavBar {
+  cursor: auto;
+}
+header .bottom_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80vw;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  border: none;
+}
+
+header .bottom_header .bottom_header_left {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+}
+
+header .bottom_header .bottom_header_left img {
+  width: 150px;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+header .bottom_header .bottom_header_left .bottom_header_left_bottom {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+header .bottom_header .bottom_header_left .btn_moreInfo {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+header .bottom_header .bottom_header_left .btn_moreInfo:hover {
+  background-color: white;
+  color: red;
+}
+
+header .bottom_header .bottom_header_left .timeTable {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 0.3rem;
+}
+header .bottom_header .bottom_header_right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+header .bottom_header .bottom_header_right p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+header .bottom_header .bottom_header_right .playTrailer {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 9px solid rgba(255, 0, 0, 0.433);
+  background-color: white;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+header .bottom_header .bottom_header_right .playTrailer:hover {
+  background-color: red;
+}
+header .bottom_header .bottom_header_right .playTrailer:hover > i {
+  color: white;
+}
+header .bottom_header .bottom_header_right .playTrailer i {
+  color: red;
+}
+
+header #modal {
+  background-color: whitesmoke;
+  left: 50%;
+  top: 50%;
+  width: 50rem;
+  max-width: 90%;
+  height: 28rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.795) 0px 15px 25px;
+  background-color: black;
+  z-index: 100;
+}
+header #modal .modal_header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  background-color: black;
+}
+header #modal .modal_header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+}
+header #modal .modal_header i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+header #modal .modal_header i:hover {
+  color: red;
+}
+
+/* pointer-events "NONE" allows to click every on the screem */
+#fade.hide,
+#modal.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* pointer-events "ALL" prevents us to click anywhere on the screem */
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+}
+
+#modal.hide {
+  top: 0;
+}
+@media screen and (max-width: 399px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 53vh;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
+  header nav .logo {
+    width: 6.5rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+  }
+  header nav .logo p {
+    font-size: 0.9rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 1rem;
+  }
+  header nav ul {
+    margin-left: 0.5rem;
+  }
+  header nav ul li {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.8rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 3.2rem;
+    height: 1.4rem;
+    font-size: 0.8rem;
+  }
+  header nav ul .signOutBtn {
+    width: 3.6rem;
+    height: 1.4rem;
+    font-size: 0.8rem;
+  }
+  header .bottom_header {
+    width: 100vw;
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+  header .bottom_header .bottom_header_left {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+  }
+
+  header .bottom_header .bottom_header_left .bottom_header_left_bottom {
+    flex-direction: column;
+    align-items: start;
+    height: 20%;
+  }
+  header .bottom_header .bottom_header_left img {
+    width: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  header .bottom_header .bottom_header_left .btn_moreInfo {
+    width: 5rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  header .bottom_header .bottom_header_left .timeTable {
+    display: flex;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  header .bottom_header .bottom_header_left .timeTable p:first-child {
+    margin-right: 0.5rem;
+  }
+  header .bottom_header .bottom_header_right p {
+    font-size: 1rem;
+  }
+  header .bottom_header .bottom_header_right .playTrailer {
+    width: 2rem;
+    height: 2rem;
+    outline: 7px solid rgba(255, 0, 0, 0.433);
+  }
+}
+
+@media screen and (min-device-width: 400px) and (max-device-width: 599px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 53vh;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
+  header nav .logo {
+    width: 6.5rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+  }
+  header nav .logo p {
+    font-size: 0.9rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 1rem;
+  }
+  header nav ul {
+    margin-left: 0.5rem;
+  }
+  header nav ul li {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.8rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 3.2rem;
+    height: 1.4rem;
+    font-size: 0.8rem;
+  }
+  header nav ul .signOutBtn {
+    width: 3.6rem;
+    height: 1.4rem;
+    font-size: 0.8rem;
+  }
+  header .bottom_header {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 90vw;
+    height: 80%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+  }
+
+  header .bottom_header .bottom_header_left {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: end;
+    width: 40%;
+    height: 96%;
+  }
+
+  header .bottom_header .bottom_header_left img {
+    height: 80%;
+    margin-bottom: 0.4rem;
+  }
+  header .bottom_header .bottom_header_left .bottom_header_left_bottom {
+    flex-direction: column;
+    align-items: start;
+    height: 20%;
+  }
+  header .bottom_header .bottom_header_left .btn_moreInfo {
+    width: 4rem;
+    height: 1.2rem;
+    font-size: 0.6rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  header .bottom_header .bottom_header_left .timeTable {
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  header .bottom_header .bottom_header_left .timeTable p:first-child {
+    margin-right: 0.5rem;
+  }
+
+  header .bottom_header .bottom_header_right p {
+    font-size: 0.9rem;
+  }
+
+  header .bottom_header .bottom_header_right .playTrailer {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 1.5rem;
+    outline: 7px solid rgba(255, 0, 0, 0.433);
+  }
+
+  header #modal {
+    width: 100%;
+    height: 80vh;
+  }
+
+  header #modal .modal_header {
+    padding: 0rem 0.5rem;
+  }
+
+  header #modal .modal_header p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 67vh;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
+  header nav .logo {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+  }
+  header nav .logo p {
+    font-size: 1rem;
+  }
+  header nav .logo span {
+    font-size: 1rem;
+  }
+  header nav ul {
+    margin-left: 0.5rem;
+  }
+  header nav ul li {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.8rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 3.5rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  header nav ul .signOutBtn {
+    width: 4.6rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  header .bottom_header {
+    margin-top: 1rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 90vw;
+    height: 80%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+  }
+
+  header .bottom_header .bottom_header_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 30%;
+    height: 100%;
+    align-items: start;
+  }
+
+  header .bottom_header .bottom_header_left img {
+    margin-bottom: 0rem;
+    border-radius: 0.5rem;
+  }
+  header .bottom_header .bottom_header_left .bottom_header_left_bottom {
+    flex-direction: column;
+    align-items: start;
+  }
+  header .bottom_header .bottom_header_left .btn_moreInfo {
+    width: 5rem;
+    height: 1.7rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+  header .bottom_header .bottom_header_left .timeTable {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  header #modal {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+    width: 80%;
+    height: 40%;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.795) 0px 15px 25px;
+    background-color: black;
+    z-index: 100;
+  }
+}
+
+/* --------------------------------Here starts the Main -------------------------------------------------- */
+
+main {
+  background-color: black;
+  height: auto;
+  padding: 0 0.5rem;
+  width: 100%;
+}
+
+main .topMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+main .topMain .moviesFilter span {
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+  margin-left: 0.9rem;
+  cursor: pointer;
+}
+main .topMain .moviesFilter span:hover {
+  color: red;
+}
+main .topMain .searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .topMain .searchContainer .alertOfInputError {
+  margin-right: 1rem;
+  display: none;
+}
+main .topMain .searchContainer .alertOfInputError p {
+  color: red;
+  font-size: 0.8rem;
+}
+main .topMain .searchContainer .search {
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  height: 1.5rem;
+}
+
+main .topMain .searchContainer .search input {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding-left: 0.3rem;
+}
+main .topMain .searchContainer .search input:focus {
+  outline: none;
+}
+main .topMain .searchContainer .search .fa-magnifying-glass {
+  color: rgb(215, 212, 212);
+  margin-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+main .topMain .searchContainer .enter {
+  border: 1px solid gray;
+  background-color: transparent;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  cursor: pointer;
+}
+main .topMain .searchContainer .enter:hover {
+  background-color: rgb(215, 212, 212);
+}
+
+main .topMain .searchContainer .enter p {
+  color: rgb(236, 236, 236);
+  font-weight: 300;
+  font-size: 0.7rem;
+}
+
+main .topMain .searchContainer .enter:hover > p {
+  color: black;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+main .lineAcross {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(0.25turn, red, red, yellow, rgba(255, 255, 0, 0.039));
+  border-image-slice: 1;
+  width: 100%;
+  padding: 0rem 1rem;
+  margin-top: 0rem;
+}
+
+/* ----------Main movies container-------- */
+
+main .moviePlayinContainer {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+main .moviePlayinContainer .movieBoxContainer {
+  width: 15%;
+  height: 20rem;
+  box-shadow: rgba(149, 157, 165, 0.304) 0px 8px 24px;
+  margin: 1.5rem;
+  cursor: pointer;
+}
+
+main .moviePlayinContainer .movieBoxContainer .posterContainer {
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+}
+main .moviePlayinContainer .movieBoxContainer .posterContainer img {
+  width: 100%;
+}
+
+main .moviePlayinContainer .movieBoxContainer:hover {
+  box-shadow: rgba(251, 251, 252, 0.651) 0px 8px 24px;
+}
+
+main .moviePlayinContainer .movieBoxContainer .infoBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+
+main .moviePlayinContainer .movieBoxContainer .infoBox .title {
+  color: rgb(226, 225, 225);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(226, 225, 225);
+  height: 1rem;
+  margin-top: 0.3rem;
+}
+main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .duration,
+.typeOfMovie {
+  font-size: 0.8rem;
+  color: rgb(226, 225, 225);
+  font-weight: 300;
+}
+main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .barDivision {
+  border-left: 0.5px solid rgb(226, 225, 225);
+}
+
+/* this media query is for the top bar search to become collum fitting small creens. */
+@media only screen and (max-width: 590px) {
+  .topMain {
+    flex-direction: column;
+  }
+  .searchContainer {
+    margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
+  main {
+    background-color: black;
+    height: auto;
+    padding: 0 0.5rem;
+  }
+  main .moviePlayinContainer {
+    margin-top: 1rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer {
+    width: 45%;
+    height: 60vh;
+    box-shadow: rgba(149, 157, 165, 0.304) 0px 8px 24px;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+/* --------------------------------Here starts the Footer -------------------------------------------------- */
+footer {
+  height: 18vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+footer .logo {
+  width: 8rem;
+  height: 3rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 0rem;
+  cursor: pointer;
+}
+footer .logo p {
+  color: white;
+  font-size: 1.5rem;
+}
+footer .logo span {
+  color: red;
+  font-size: 1.5rem;
+}
+footer .contact {
+  color: white;
+  cursor: pointer;
+}
+footer .contact:hover {
+  color: red;
+}
+
+footer .SocialMediaContainer {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .SocialMediaContainer i {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer .SocialMediaContainer i:hover {
+  color: red;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 700px) {
+  footer {
+    height: 18vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  footer .logo {
+    width: 5rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+
+  footer .logo p {
+    font-size: 1.1rem;
+  }
+  footer .logo span {
+    font-size: 1.1rem;
+  }
+  footer .SocialMediaContainer {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

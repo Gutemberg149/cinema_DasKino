@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styleMoviePage.css" />
+    <title>Das Kino</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index/index.html">
+          <div class="logo">
+            <p>Das</p>
+            <span>Kino</span>
+          </div>
+        </a>
+        <ul>
+          <a href="../index/index.html">
+            <li>Home</li>
+          </a>
+          <a href="../contact/contact.html">
+            <li>Contact us</li>
+          </a>
+
+          <a href="../logIn_signUp/login.html">
+            <li class="signInBtn">Sign in</li>
+          </a>
+          <li class="signOutBtn">Sign out</li>
+          <li class="userNameNavBar"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="topContainer">
+        <p class="playingStatus"></p>
+      </div>
+
+      <section class="containerTrailer">
+        <div class="title"></div>
+        <div class="video_container"></div>
+      </section>
+
+      <section class="infoContainer">
+        <div class="InnerInfoLeft">
+          <div class="infoContainerTitle"><span>DETAILS</span></div>
+          <div class="info">
+            <p>DURATION</p>
+            <p class="durationTime">2h35m</p>
+          </div>
+          <div class="info">
+            <p>DIRECTED BY</p>
+            <p class="director">TAKASHI YAMAZAKI</p>
+          </div>
+          <div class="info">
+            <p>STUDIO</p>
+            <p class="studio">TOHO INTERNATIONAL</p>
+          </div>
+        </div>
+
+        <div class="synopisContainer">
+          <div class="synopisContainerTitle"><span>SYNOPSIS</span></div>
+          <p class="synopis">
+            Japan, devastated after the war, faces a new threat in the form of Godzilla. How will the country confront this impossible situation?
+          </p>
+        </div>
+      </section>
+
+      <div class="findTicketsTitle"><h4>FIND TICKETS</h4></div>
+
+      <div class="containerChoose">
+        <p class="chooseDateSection">Choose a date</p>
+      </div>
+
+      <div class="dateConteinar"></div>
+
+      <section class="timeTable timeTable1">
+        <div class="containerChoose">
+          <p class="chooseTime1">Choose a time</p>
+        </div>
+
+        <div class="bottomTimeTable">
+          <div class="boxtime time01">10:00 AM</div>
+          <div class="boxtime time01">05:00 PM</div>
+          <div class="boxtime time02">08:00 PM</div>
+        </div>
+      </section>
+
+      <section class="timeTable timeTable2">
+        <div class="containerChoose">
+          <p class="chooseTime2">Choose a time</p>
+        </div>
+
+        <div class="bottomTimeTable">
+          <div class="boxtime time01">11:00 AM</div>
+          <div class="boxtime time01">02:00 PM</div>
+          <div class="boxtime time02">06:00 PM</div>
+          <div class="boxtime time02">09:00 PM</div>
+        </div>
+      </section>
+
+      <a class="goToSeatLink" href="../seatSection/seatSection.html">
+        <div class="goToSeat">
+          <p>Select Your Seat Here</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <div class="topTimeTable">
+        <div class="titleCpontainer">
+          <h4>DasKino location</h4>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <p>Av. Paulista 2345, consolação, SP</p>
+        <div class="icons">
+          <i class="fa-solid fa-headphones-simple"></i>
+          <i class="fa-solid fa-wheelchair"></i>
+          <i class="fa-solid fa-mug-saucer"></i>
+          <i class="fa-solid fa-ticket"></i>
+        </div>
+      </div>
+
+      <div class="borderBottom"></div>
+    </main>
+    <div class="footerContainer">
+      <footer>
+        <a href="../index/index.html">
+          <div class="logo">
+            <p>Das</p>
+            <span>Kino</span>
+          </div>
+        </a>
+        <a href="../contact/contact.html">
+          <a class="contact" href="../contact/contact.html">
+            <p>Contact us</p>
+          </a>
+        </a>
+
+        <div class="SocialMediaContainer">
+          <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+          <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+
+          <a href="https://www.linkedin.com/mynetwork/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./moviePageScript.js" type="module"></script>
+  </body>
+</html>

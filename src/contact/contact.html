@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styleContact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Das Kino</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <p>Das</p>
+          <span>Kino</span>
+        </div>
+
+        <ul>
+          <a href="../index/index.html">
+            <li>Home</li>
+          </a>
+          <a href="../logIn_signUp/login.html">
+            <li class="signInBtn">Sign in</li>
+          </a>
+          <li class="signOutBtn">Sign out</li>
+          <li class="userNameNavBar"></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="left">
+        <h3 class="title">Contact Us</h3>
+        <p>Feel free to contact us any time. We will get back to you as soon as we can.</p>
+
+        <form action="/form-submit.php" method="post">
+          <div class="inputBox">
+            <input type="text" id="name" name="nameName" required="required" />
+            <span for="name">Name</span>
+          </div>
+
+          <div class="inputBox">
+            <input type="text" id="email" name="nameEmail" required="required" />
+            <span for="email">Email</span>
+          </div>
+
+          <div class="textAreaBox">
+            <label class="label" for="textarea">Write your message</label>
+            <textarea name="nameTextarea" id="textarea" maxlength="200"></textarea>
+          </div>
+          <div class="noteInforming">
+            <div class="innerNote error">Ao menos um dos campos acima não esta preenchido</div>
+            <div class="innerNote success">Menssagem enviada com sucesso</div>
+          </div>
+          <button type="submit" id="btnSubmit">Submit</button>
+        </form>
+      </div>
+      <div class="right">
+        <div class="rightSide1">
+          <div class="innerBox">
+            <h4>INFO</h4>
+            <div>
+              <i class="fa-regular fa-envelope"></i>
+              <p>DasKino@gmail.com</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p>11 55 98763451</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-earth-americas"></i>
+              <p>Av. Paulista 2345, consolação, SP</p>
+            </div>
+          </div>
+        </div>
+        <div class="rightSide2"></div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <a href="../index/index.html">
+      <div class="logo">
+        <p>Das</p>
+        <span>Kino</span>
+      </div>
+    </a>
+    <a href="../index/index.html">
+      <p class="contact">Contact us</p>
+    </a>
+    <div class="SocialMediaContainer">
+      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+      <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+
+      <a href="https://www.linkedin.com/mynetwork/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+  <body>
+    <script src="./contact.js" type="module"></script>
+  </body>
+</html>

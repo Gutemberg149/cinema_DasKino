@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+body {
+  background-image: linear-gradient(
+    90deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(0deg 91% 5%) 16%,
+    hsl(0deg 95% 9%) 23%,
+    hsl(0deg 94% 13%) 28%,
+    hsl(0deg 93% 18%) 32%,
+    hsl(0deg 95% 22%) 35%,
+    hsl(0deg 94% 26%) 38%,
+    hsl(0deg 95% 31%) 40%,
+    hsl(0deg 94% 35%) 42%,
+    hsl(0deg 94% 40%) 44%,
+    hsl(0deg 95% 44%) 46%,
+    hsl(0deg 94% 48%) 48%,
+    hsl(0deg 95% 44%) 50%,
+    hsl(0deg 95% 40%) 52%,
+    hsl(0deg 96% 35%) 54%,
+    hsl(0deg 96% 31%) 57%,
+    hsl(0deg 97% 27%) 59%,
+    hsl(0deg 98% 22%) 62%,
+    hsl(0deg 98% 18%) 66%,
+    hsl(0deg 97% 14%) 70%,
+    hsl(0deg 100% 9%) 76%,
+    hsl(0deg 100% 5%) 84%,
+    hsl(0deg 100% 1%) 100%
+  );
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 9vh;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  border: 1px solid red;
+}
+header nav .logo p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+header nav .logo span {
+  color: red;
+  font-size: 1.3rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header nav ul li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+header nav ul li:hover {
+  color: red;
+}
+
+header nav ul .signOutBtn {
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 1.5rem;
+  border-radius: 0.2rem;
+  background-color: red;
+}
+
+header nav ul .signOutBtn:hover {
+  background-color: white;
+}
+
+header nav ul .signInBtn {
+  width: 4.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  background-color: red;
+}
+
+header nav ul .signInBtn:hover {
+  background-color: white;
+}
+
+header nav ul li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+
+@media screen and (max-width: 599px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 9vh;
+    margin-top: 1rem;
+  }
+
+  header nav .logo {
+    width: 5.5rem;
+    height: 1.8rem;
+  }
+  header nav .logo p {
+    color: white;
+    font-size: 1rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 1rem;
+  }
+  header nav ul {
+    margin-left: 0.5rem;
+  }
+  header nav ul li {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 0.8rem;
+  }
+  header nav ul .signInBtn {
+    width: 3.2rem;
+    height: 1.4rem;
+    font-size: 0.8rem;
+  }
+  header nav ul .signOutBtn {
+    width: 3.8rem;
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* --------------------------------Here starts the Main -------------------------------------------------- */
+main {
+  display: flex;
+  padding: 1rem 4rem;
+}
+.left {
+  width: 55%;
+}
+
+.left h3 {
+  font-size: 2rem;
+  color: white;
+}
+.left p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  color: aliceblue;
+  font-size: 1rem;
+  bottom: 0.2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  transform: translateY(-30px) scale(0.8);
+  color: white;
+  width: fit-content;
+  height: 0.8rem;
+  border-radius: 1px;
+  font-size: 0.8rem;
+}
+input:focus {
+  outline: none;
+}
+
+.textAreaBox textarea {
+  width: 100%;
+  height: 8.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+#btnSubmit {
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(224, 2, 2);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+#btnSubmit:hover {
+  color: rgb(224, 2, 2);
+  background-color: white;
+}
+.noteInforming {
+  width: fit-content;
+  padding-right: 0.3rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.361);
+}
+.noteInforming .innerNote {
+  color: red;
+  font-size: 1.1;
+  display: none;
+}
+
+.right {
+  display: flex;
+  width: 40%;
+  margin-left: 2rem;
+}
+
+.right .rightSide1 {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.right .rightSide1 .innerBox {
+  position: absolute;
+  width: 25rem;
+  height: 18rem;
+  background-color: rgb(24, 24, 24);
+  left: 0;
+  padding: 2rem;
+}
+.right .rightSide1 .innerBox h4 {
+  color: aliceblue;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+.right .rightSide1 .innerBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.right .rightSide1 .innerBox div i {
+  color: aliceblue;
+  margin-right: 0.9rem;
+  font-size: 1.2rem;
+}
+.right .rightSide1 .innerBox div p {
+  color: aliceblue;
+  margin-right: 0.9rem;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.right .rightSide2 {
+  position: absolute;
+  width: 10%;
+  height: 70%;
+  background-color: hsl(0deg 95% 44%);
+  right: 5rem;
+}
+@media screen and (max-width: 599px) {
+  main {
+    padding: 1rem 0.8rem;
+  }
+  .left h3 {
+    font-size: 1.1rem;
+  }
+  .left p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .inputBox input {
+    padding: 3px;
+    color: white;
+    font-size: 0.9rem;
+  }
+  .textAreaBox .label {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 2.6rem;
+  }
+  .textAreaBox {
+    margin-bottom: 0rem;
+  }
+  .textAreaBox textarea {
+    width: 100%;
+    height: 6.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin-bottom: 0rem;
+  }
+  #btnSubmit {
+    width: 5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    margin-top: 0.9rem;
+  }
+  .noteInforming {
+    padding-right: 0.3rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.361);
+  }
+  .noteInforming .innerNote {
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+  }
+  .right {
+    margin-left: 0.5rem;
+  }
+  .right .rightSide1 {
+    width: 100%;
+  }
+  .right .rightSide1 .innerBox {
+    width: 100%;
+    height: 80%;
+    padding: 0rem;
+    padding-left: 0.5rem;
+  }
+
+  .right .rightSide1 .innerBox div p {
+    word-break: break-all;
+  }
+  .right .rightSide1 .innerBox h4 {
+    font-size: 1.4rem;
+  }
+  .right .rightSide2 {
+    position: absolute;
+    width: 15%;
+    height: 74%;
+    background-color: hsl(0deg 95% 44%);
+    right: 1rem;
+  }
+}
+@media screen and (min-device-width: 600px) and (max-device-width: 1100px) {
+  .right .rightSide1 .innerBox div p {
+    word-break: break-all;
+  }
+  .right .rightSide1 .innerBox {
+    width: 100%;
+    height: 60%;
+    padding: 0.5rem;
+  }
+  .right .rightSide2 {
+    width: 15%;
+    right: 1rem;
+    height: 80%;
+  }
+}
+/* --------------------------------Here starts the Footer -------------------------------------------------- */
+footer {
+  height: 18vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+  background-color: black;
+}
+
+footer .logo {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+footer .logo p {
+  color: white;
+  font-size: 1.5rem;
+}
+footer .logo span {
+  color: red;
+  font-size: 1.5rem;
+}
+
+footer .contact {
+  color: white;
+  cursor: pointer;
+}
+footer .contact:hover {
+  color: red;
+}
+
+footer .SocialMediaContainer {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .SocialMediaContainer i {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer .SocialMediaContainer i:hover {
+  color: red;
+}
+
+@media screen and (max-width: 699px) {
+  footer {
+    height: 18vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  footer .logo {
+    width: 5rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+
+  footer .logo p {
+    font-size: 1.1rem;
+  }
+  footer .logo span {
+    font-size: 1.1rem;
+  }
+  footer .SocialMediaContainer {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

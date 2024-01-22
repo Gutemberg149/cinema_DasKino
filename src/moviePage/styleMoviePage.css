@@ -1,0 +1,752 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  list-style: none;
+  color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+body {
+  background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(0deg 100% 4%) 16%,
+    hsl(0deg 95% 7%) 23%,
+    hsl(0deg 96% 11%) 28%,
+    hsl(0deg 97% 15%) 32%,
+    hsl(0deg 96% 18%) 35%,
+    hsl(0deg 96% 22%) 38%,
+    hsl(0deg 95% 26%) 40%,
+    hsl(0deg 96% 29%) 42%,
+    hsl(0deg 96% 33%) 44%,
+    hsl(0deg 96% 37%) 46%,
+    hsl(0deg 96% 40%) 48%,
+    hsl(0deg 97% 37%) 50%,
+    hsl(0deg 96% 33%) 52%,
+    hsl(0deg 97% 30%) 54%,
+    hsl(0deg 97% 26%) 57%,
+    hsl(0deg 98% 22%) 59%,
+    hsl(0deg 98% 19%) 62%,
+    hsl(0deg 97% 15%) 66%,
+    hsl(0deg 100% 12%) 70%,
+    hsl(0deg 100% 8%) 76%,
+    hsl(0deg 100% 4%) 84%,
+    hsl(0deg 100% 1%) 100%
+  );
+  height: auto;
+  padding: 0 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 9vh;
+  margin-bottom: 2rem;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  border: 1px solid red;
+}
+header nav .logo p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+header nav .logo span {
+  color: red;
+  font-size: 1.3rem;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+header nav ul li {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header nav ul li:hover {
+  color: red;
+}
+
+header nav ul .signInBtn {
+  width: 4.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  background-color: red;
+  text-decoration: none;
+}
+
+header nav ul .signInBtn:hover {
+  background-color: white;
+}
+
+header nav ul .signOutBtn {
+  width: 5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  background-color: red;
+}
+
+header nav ul .signOutBtn:hover {
+  background-color: white;
+}
+
+header nav ul .signIn_li:hover {
+  background-color: white;
+}
+
+header nav ul li a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    padding: 0rem;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 9vh;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  header nav .logo {
+    width: 4.5rem;
+    height: 1.6rem;
+    margin-left: 0.2rem;
+    border: 1px solid red;
+  }
+  header nav .logo p {
+    color: white;
+    font-size: 0.8rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 0.9rem;
+  }
+  header nav ul {
+    justify-content: end;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 80%;
+  }
+  header nav ul li {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-right: 0.4rem;
+  }
+  header nav ul .signInBtn {
+    width: 12vw;
+    height: 1.6rem;
+    font-size: 2.4vw;
+    margin: 0;
+  }
+  header nav ul .signOutBtn {
+    width: 13vw;
+    height: 1.6rem;
+    font-size: 2.6vw;
+    margin: 0;
+    margin-right: 0.5rem;
+  }
+}
+@media screen and (min-device-width: 391px) and (max-device-width: 628px) {
+  body {
+    padding: 0rem 0.5rem;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 9vh;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  header nav .logo {
+    width: 5rem;
+    height: 1.8rem;
+    margin-left: 0.3rem;
+    border: 1px solid red;
+  }
+  header nav .logo p {
+    color: white;
+    font-size: 1rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 1rem;
+  }
+  header nav ul {
+    justify-content: space-between;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    width: 70%;
+    margin-left: 2rem;
+  }
+  header nav ul li {
+    font-size: 3.5vw;
+    font-weight: 600;
+    margin-right: 0.4rem;
+  }
+  header nav ul .signInBtn {
+    width: 12vw;
+    height: 1.6rem;
+    font-size: 2.6vw;
+    margin: 0;
+  }
+  header nav ul .signOutBtn {
+    width: 15vw;
+    height: 1.6rem;
+    font-size: 3.4vw;
+    margin: 0;
+    margin-right: 0.5rem;
+  }
+}
+
+/* -------------------------main------------------------------ */
+.topContainer {
+  width: 100%;
+}
+
+.topContainer .playingStaus {
+  color: rgb(209, 206, 206);
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+.containerTrailer {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerTrailer .title {
+  width: 100%;
+  height: 10%;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+.containerTrailer .video_container {
+  width: 100%;
+  height: 90%;
+}
+
+.infoContainer {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.infoContainer .InnerInfoLeft {
+  width: 45%;
+}
+.infoContainer .InnerInfoLeft .infoContainerTitle {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(222, 220, 220);
+}
+.infoContainer .InnerInfoLeft .infoContainerTitle span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.infoContainer .InnerInfoLeft .info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.4rem;
+  margin-top: 1.1rem;
+  border-bottom: 1px solid rgb(222, 220, 220);
+}
+
+.infoContainer .InnerInfoLeft .info p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.infoContainer .synopisContainer {
+  width: 45%;
+}
+
+.infoContainer .synopisContainer .synopisContainerTitle {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgb(222, 220, 220);
+}
+
+.infoContainer .synopisContainer .synopisContainerTitle span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.infoContainer .synopisContainer p {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: rgb(222, 220, 220);
+}
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 0.5rem;
+  }
+
+  .containerTrailer .title {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  .infoContainer .InnerInfoLeft .info p {
+    font-size: 0.8rem;
+  }
+  .infoContainer .InnerInfoLeft {
+    width: 47%;
+  }
+  .infoContainer .synopisContainer {
+    width: 47%;
+  }
+}
+/* -------------------------ticket dates section ------------------------------- */
+
+Title {
+  margin: 1.5rem 0rem;
+}
+
+.findTicketsTitle h4 {
+  font-size: 1.3rem;
+  color: rgb(219, 218, 218);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.containerChoose {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.chooseDateSection {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.528);
+  width: fit-content;
+  padding: 0 0.4rem;
+  border-radius: 1rem;
+}
+
+.chooseTime1,
+.chooseTime2 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: red;
+  background-color: rgba(32, 31, 31, 0.631);
+  width: fit-content;
+  padding: 0 0.4rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dateConteinar {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 9;
+  transition: 0.3s all ease;
+  margin: 1rem 0;
+}
+
+.dateConteinar .date {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 7rem;
+  margin: 0 0.45rem 1rem 0.45rem;
+  cursor: pointer;
+}
+
+.dateConteinar .date:hover > .weekDay {
+  color: white;
+}
+
+.dateConteinar .date:hover > .monthBox .month {
+  color: white;
+}
+
+.dateConteinar .date:hover > .monthBox .dayMonth {
+  color: white;
+}
+
+.dateConteinar .date .weekDay {
+  color: rgb(191, 193, 191);
+}
+
+.dateConteinar .date .monthBox {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dateConteinar .date .monthBox .month {
+  color: rgb(193, 191, 191);
+  font-size: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+.dateConteinar .date .monthBox .dayMonth {
+  color: rgb(193, 191, 191);
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+.highLight {
+  color: white !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  .chooseDateSection {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .chooseTime1,
+  .chooseTime2 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .dateConteinar {
+    margin: 0rem 0;
+  }
+  .dateConteinar .date {
+    width: 5rem;
+    margin: 0 0.45rem 0.5rem 0.45rem;
+  }
+  .dateConteinar .date .weekDay {
+    font-size: 0.8rem;
+  }
+  .dateConteinar .date .monthBox .month {
+    color: rgb(221, 13, 13);
+    margin-right: 0.3rem;
+    font-size: 0.7rem;
+  }
+  .dateConteinar .date .monthBox .month {
+    color: rgb(193, 191, 191);
+    margin-right: 0.3rem;
+    font-size: 0.7rem;
+  }
+
+  .dateConteinar .date .monthBox .dayMonth {
+    color: rgb(193, 191, 191);
+    margin-right: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .findTicketsTitle {
+    margin-bottom: 0;
+  }
+  .highLight {
+    color: rgb(255, 255, 255) !important;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+/*-------------------------------------Time table section-------------------------------------------- */
+.timeTable {
+  margin-bottom: 0rem;
+
+  padding-bottom: 0rem;
+}
+
+.topTimeTable {
+  width: 50%;
+}
+
+.topTimeTable .titleCpontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: fit-content;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+.topTimeTable .titleCpontainer h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(221, 220, 220);
+}
+.topTimeTable .titleCpontainer i {
+  font-size: 1.2rem;
+  color: rgb(221, 220, 220);
+  margin-top: 2%;
+}
+
+.topTimeTable {
+  margin-bottom: 2rem;
+}
+.topTimeTable i {
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.topTimeTable p {
+  font-size: 0.8rem;
+  color: rgb(221, 220, 220);
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+.topTimeTable .icons {
+  padding: 0;
+  left: 0;
+  margin: 0;
+}
+.topTimeTable .icons i {
+  font-size: 1rem;
+  color: rgb(221, 220, 220);
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+.timeTable .bottomTimeTable {
+  display: flex;
+  padding-bottom: 1.5rem;
+}
+.timeTable .bottomTimeTable .boxtime {
+  border: 1px solid rgb(195, 193, 193);
+  margin-right: 2rem;
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.timeTable .bottomTimeTable .boxtime:hover {
+  background-color: rgba(240, 248, 255, 0.11);
+}
+
+.timeTable2 {
+  display: none;
+}
+
+.goToSeat {
+  width: 18rem;
+  height: 2rem;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 0, 0, 0.377);
+}
+
+.goToSeat p {
+  font-size: 1.3rem;
+  color: rgb(255, 251, 247);
+}
+.goToSeat:hover > p,
+.goToSeat:hover > i {
+  color: red;
+}
+.borderBottom {
+  border-bottom: 1px solid rgba(245, 245, 245, 0.803);
+}
+.highLightBoxTime {
+  color: white !important;
+  transform: scale(1.2);
+  background-color: rgba(240, 248, 255, 0.11);
+}
+
+.goToSeatLink {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topTimeTable .titleCpontainer {
+    margin-bottom: 1rem;
+  }
+  .topTimeTable .titleCpontainer h4 {
+    font-size: 1.2rem;
+  }
+
+  .topTimeTable .titleCpontainer i {
+    font-size: 0.9rem;
+  }
+  .timeTable .bottomTimeTable .boxtime {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    padding: 0;
+  }
+  .goToSeat {
+    width: 12rem;
+    height: 1.5rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+  }
+
+  .goToSeat p {
+    font-size: 0.9rem;
+    color: rgb(248, 244, 241);
+  }
+}
+/* --------------------------------Here starts the Footer -------------------------------------------------- */
+.footerContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+footer {
+  height: 18vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+footer .logo {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+footer .logo p {
+  color: white;
+  font-size: 1.5rem;
+}
+footer .logo span {
+  color: red;
+  font-size: 1.5rem;
+}
+
+footer .contact {
+  color: white;
+  cursor: pointer;
+}
+footer .contact:hover {
+  color: red;
+}
+
+footer .SocialMediaContainer {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .SocialMediaContainer:hover {
+  color: red;
+}
+footer .SocialMediaContainer i {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer .SocialMediaContainer i:hover {
+  color: red;
+}
+
+@media screen and (max-width: 699px) {
+  footer {
+    height: 18vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  footer .logo {
+    width: 5rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+
+  footer .logo p {
+    font-size: 1.1rem;
+  }
+  footer .logo span {
+    font-size: 1.1rem;
+  }
+  footer .SocialMediaContainer {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

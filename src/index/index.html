@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styleIndex.css" />
+    <title>Das Kino</title>
+  </head>
+
+  <body>
+    <div id="fade" class="hide"></div>
+    <header>
+      <nav>
+        <div class="logo">
+          <p>Das</p>
+          <span>Kino</span>
+        </div>
+
+        <ul>
+          <a href="../contact/contact.html">
+            <li>Contact us</li>
+          </a>
+
+          <a href="../logIn_signUp/login.html">
+            <li class="signInBtn">Sign in</li>
+          </a>
+
+          <li class="signOutBtn">Sign out</li>
+          <li class="userNameNavBar"></li>
+        </ul>
+      </nav>
+
+      <div class="bottom_header">
+        <div class="bottom_header_left">
+          <img src="../Images/imgCover/avatar.jpeg" alt="" />
+          <div class="bottom_header_left_bottom">
+            <a href="../moviePage/moviePage.html"><button class="btn_moreInfo">More info</button></a>
+
+            <div class="timeTable">
+              <p>Jun 20 2024</p>
+              <p>MAX 3D</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom_header_right">
+          <p>Play trailer</p>
+          <div class="playTrailer"><i class="fa-solid fa-play"></i></div>
+        </div>
+      </div>
+
+      <div id="modal" class="hide">
+        <div class="modal_header">
+          <p>Avatar The Way Of Water</p>
+          <i class="fa-solid fa-x"></i>
+        </div>
+        <div id="video_container"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="topMain">
+        <div class="moviesFilter">
+          <span class="allMoviesSpan">ALL MOVIES</span>
+          <span class="playingNowSpan">PLAYING NOW</span>
+          <span class="comingSoonSpan">COMING SOON</span>
+        </div>
+
+        <div class="searchContainer">
+          <div class="alertOfInputError">
+            <p>ENTER A VALID TITLE</p>
+          </div>
+          <div class="search">
+            <input type="text" maxlength="30" class="inputMovieTitle" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="enter"><p>ENTER</p></div>
+        </div>
+      </div>
+
+      <div class="alertOfInputError">
+        <p>Enter a valid title</p>
+      </div>
+      <div class="lineAcross"></div>
+
+      <div class="moviePlayinContainer">
+        <div class="movieBoxContainer">
+          <a href="../moviePage/moviePage.html">
+            <div class="posterContainer"></div>
+          </a>
+          <div class="infoBox">
+            <div class="title">127 hours</div>
+            <div class="bottomInfo">
+              <p class="duration">120 min</p>
+              <div class="barDivision"></div>
+              <p class="typeOfMovie">Action</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="../index/index.html">
+        <div class="logo">
+          <p>Das</p>
+          <span>Kino</span>
+        </div>
+      </a>
+
+      <a class="contact" href="../contact/contact.html">
+        <p>Contact us</p>
+      </a>
+
+      <div class="SocialMediaContainer">
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+
+        <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+
+        <a href="https://www.linkedin.com/mynetwork/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./indexJS.js" type="module"></script>
+  </body>
+</html>

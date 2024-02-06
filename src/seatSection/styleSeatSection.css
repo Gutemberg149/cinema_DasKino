@@ -476,11 +476,12 @@ main .seatContainer .chair .row .seatEmpty {
 }
 
 main .seatsSelected {
-  width: 55%;
+  width: 95%;
   display: flex;
   justify-content: start;
   align-items: center;
   margin-top: 4rem;
+  height: 3rem;
 }
 
 main .seatsSelected .selectedContainer {
@@ -519,17 +520,17 @@ main .btnContainer .overLayBtnContinue {
 
 main .btnContainer .btnContinue {
   display: none;
-  width: 9rem;
-  height: 2rem;
+  width: 11.5rem;
+  height: 2.5rem;
   background-color: rgb(47, 1, 1);
   border: none;
   color: rgb(237, 237, 237);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   font-weight: 400;
   cursor: pointer;
   border-radius: 5px;
-  border: 1px solid rgb(205, 203, 203);
   z-index: 90;
+  border: 2px solid red;
 }
 
 /* this part is for the screen and the seats */
@@ -655,7 +656,10 @@ main .btnContainer .btnContinue {
     flex-direction: column;
     padding: 0rem;
     margin-top: 1rem;
+    margin-left: 1.5rem;
     font-size: 1rem;
+    height: 5rem;
+    align-items: start;
   }
 
   main .seatsSelected .selectedContainer .selected {
@@ -675,6 +679,9 @@ main .btnContainer .btnContinue {
   main .seatsSelected {
     width: 100%;
     flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+    margin-left: 1.8rem;
   }
   main .seatsSelected .selectedContainer .selected {
     color: white;
@@ -690,11 +697,14 @@ main .btnContainer .btnContinue {
 }
 @media screen and (min-device-width: 700px) and (max-device-width: 1100px) {
   main .seatsSelected {
-    width: 95%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-top: 4rem;
+    margin-top: 3rem;
+  }
+
+  main .btnContainer .btnContinue {
+    width: 9.5rem;
+    height: 2rem;
+    font-size: 0.75rem;
+    border: 1px solid red;
   }
 }
 /*--------------------Here starts the footer---------------- */

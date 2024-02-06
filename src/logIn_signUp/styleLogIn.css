@@ -359,6 +359,14 @@ main .logInContainer form .inputBox span {
 input:focus {
   outline: none;
 }
+.errorWarning {
+  display: none;
+}
+.errorWarning p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: white;
+}
 
 main .logInContainer .enterBtn {
   width: 6rem;

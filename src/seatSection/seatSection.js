@@ -209,5 +209,5 @@ function signOutUser() {
 checkUserAndRetrieveInfo();
 //capture the page path the user was on when press sign in btn, for later on come back to it automatically.
 overLayBtnContinue.addEventListener("click", () => {
-  localStorage.setItem("lastPage", JSON.stringify("../seatSection/seatSection.html"));
+  localStorage.setItem("lastPage", JSON.stringify("../checkOut/checkOutPayment.html"));
 });

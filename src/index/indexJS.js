@@ -241,7 +241,7 @@ moviesDetailsFetch();
 //video modal do avatar no home. To bring the modal window down and display the trailer.
 import toggleModal from "./videoCodes.js";
 
-//------------------------------------------------------------------------
+//----------------------Fire Base Auth--------------------------------------------------
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";

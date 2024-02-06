@@ -1,48 +1,17 @@
+var map = L.map("mapid").setView([-23.555, -46.662], 13);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "© OpenStreetMap contributors",
+}).addTo(map);
+
+var marker = L.marker([-23.555, -46.662]).addTo(map);
+363;
+marker.bindPopup("<b>Avenida Paulista, 2064</b><br>Consolação, São Paulo").openPopup();
+
+//----------------------Fire Base Auth--------------------------------------------------
 const signOutBtn = document.querySelector(".signOutBtn");
 const signInBtn = document.querySelector(".signInBtn");
 const userNameNavBar = document.querySelector(".userNameNavBar");
-const form = document.querySelector("form");
-let userName = document.getElementById("name");
-let userEmail = document.getElementById("email");
-let userText = document.getElementById("textarea");
-const btnSubmit = document.getElementById("btnSubmit");
-const error = document.querySelector(".noteInforming .error");
-const success = document.querySelector(".noteInforming .success");
-
-btnSubmit.addEventListener("click", (e) => {
-  e.preventDefault();
-  const userNameValue = userName.value;
-  const userEmailValue = userEmail.value;
-  const userTextValue = userText.value;
-
-  if (userNameValue !== "" && userEmailValue !== "" && userTextValue !== "") {
-    //This https below is just a exemplo of sending a form using a formData. The values can be sent to a server.
-
-    const formData = new FormData(form);
-
-    for (const item of formData) {
-      console.log(item[0], item[1]);
-    }
-    fetch("https://httpbin.org/post", {
-      method: "POST",
-      body: formData,
-    })
-      .then((res) => res.json())
-      .then((res) => console.log(res));
-    //--------------------------------------------------
-
-    error.style.display = "none";
-    success.style.display = "block";
-
-    userName.value = "";
-    userEmail.value = "";
-    userText.value = "";
-  } else {
-    error.style.display = "block";
-    success.style.display = "none";
-  }
-});
-//----------------- Login authentification---------------------------------------
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
@@ -64,11 +33,8 @@ const auth = getAuth();
 function checkUserAndRetrieveInfo() {
   signOutBtn.style.display = "none";
   signInBtn.style.display = "none";
-
   onAuthStateChanged(auth, async (user) => {
     if (user) {
-      signOutBtn.style.display = "none";
-      signInBtn.style.display = "none";
       try {
         const userUID = user.uid;
         const docRef = doc(db, "UserAuthList", userUID);
@@ -104,11 +70,8 @@ function signOutUser() {
       console.error("Error signing out:", error);
     });
 }
-
-checkUserAndRetrieveInfo();
-
 //capture the page path the user was on when press sign in btn, for later on come back to it automatically.
 checkUserAndRetrieveInfo();
 signInBtn.addEventListener("click", () => {
-  localStorage.setItem("lastPage", JSON.stringify("../contact/contact.html"));
+  localStorage.setItem("lastPage", JSON.stringify("../mapLocation/mapLocation.html"));
 });

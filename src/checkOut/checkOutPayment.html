@@ -70,9 +70,7 @@
 
           <p class="poltronas">Poltronas</p>
 
-          <div class="seats">
-            <!-- <div class="seat">R03</div> -->
-          </div>
+          <div class="seats"></div>
 
           <div class="numbOfTickets">
             <p class="tag">Tickets:</p>
@@ -118,25 +116,25 @@
         <p class="pgIntructions">
           Para finalizar, você deve confirmar seus dados de compra e informar os dados de seu cartão. Após este passo, sua compra não poderá ser mais alterada.
         </p>
-
+        <!-- <img src="../Images//" alt=""> -->
         <details>
           <summary>Cartão de Credito</summary>
           <div class="cards">
-            <img src="../Images/imgCredCard/diners-club.jpg" alt="" />
-            <img src="../Images/imgCredCard/elocard.png" alt="" />
-            <img src="../Images/imgCredCard/mastercard.png" alt="" />
-            <img src="../Images/imgCredCard/visa.jpeg" alt="" />
+            <img src="../Images/imgCards/dinersclub.png" alt="" />
+            <img src="../Images/imgCards/elocard.webp" alt="" />
+            <img src="../Images/imgCards/mastercard.png" alt="" />
+            <img src="../Images/imgCards/visa.jpeg" alt="" />
           </div>
           <form class="cartaoForm">
             <div class="cardNumber">
               <span>Número do Cartão</span>
-              <input id="cCardnumber" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required />
+              <input id="cCardnumber" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="10" placeholder="10 digits" required />
             </div>
 
             <div class="expiration">
               <span>Data de validade</span>
               <div class="inputDate">
-                <input id="cardMonthValid" type="text" name="month" placeholder="MM" maxlength="2" size="2" />
+                <input id="cardMonthValid" type="text" name="month" placeholder="MM" maxlength="2" />
                 <span>/</span>
                 <input id="cardYearValid" type="text" name="year" placeholder="YY" maxlength="2" size="2" />
               </div>
@@ -155,7 +153,7 @@
 
         <div class="bottomPage">
           <p class="warning">Ao menos uma das informações acima estar errada.</p>
-          <!-- <a href="."></a> -->
+
           <button class="finalizar">finalizar compra</button>
 
           <div class="securityBox">
@@ -184,6 +182,6 @@
         <a href="https://www.linkedin.com/mynetwork/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
       </div>
     </footer>
-    <script src="./checkoutScript.js" type="module"></script>
+    <script src="./checkoutScript.js" type="module" defer></script>
   </body>
 </html>

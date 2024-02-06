@@ -374,7 +374,7 @@ Title {
   font-size: 1.3rem;
   color: rgb(219, 218, 218);
   font-weight: 400;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 .containerChoose {
   width: 100%;
@@ -415,6 +415,7 @@ Title {
   z-index: 9;
   transition: 0.3s all ease;
   margin: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .dateConteinar .date {
@@ -516,8 +517,7 @@ Title {
 
 /*-------------------------------------Time table section-------------------------------------------- */
 .timeTable {
-  margin-bottom: 0rem;
-
+  margin-bottom: 2rem;
   padding-bottom: 0rem;
 }
 
@@ -530,18 +530,25 @@ Title {
   align-items: center;
   justify-content: space-evenly;
   width: fit-content;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   cursor: pointer;
 }
+
 .topTimeTable .titleCpontainer h4 {
   font-size: 1.5rem;
   font-weight: 400;
   color: rgb(221, 220, 220);
 }
+.topTimeTable .titleCpontainer:hover > h4 {
+  color: red;
+}
 .topTimeTable .titleCpontainer i {
   font-size: 1.2rem;
   color: rgb(221, 220, 220);
   margin-top: 2%;
+}
+.topTimeTable .titleCpontainer:hover > i {
+  color: red;
 }
 
 .topTimeTable {
@@ -597,7 +604,7 @@ Title {
   width: 18rem;
   height: 2rem;
   padding: 1rem 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

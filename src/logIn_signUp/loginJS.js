@@ -22,6 +22,7 @@ function deployingMoveImfo() {
 deployingMoveImfo();
 
 //----------------- Login authentification---------------------------------------
+const errorWarning = document.querySelector(".errorWarning");
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
@@ -58,10 +59,14 @@ onAuthStateChanged(auth, (user) => {
           console.log("No such document!");
         }
       });
+      setTimeout(() => {
+        errorWarning.style.display = "block";
+      }, 500);
     }
     enter.addEventListener("click", SingInUser);
   } else {
     let lastPage = JSON.parse(localStorage.getItem("lastPage"));
     location.href = `${lastPage}`;
+    console.log("Error");
   }
 });

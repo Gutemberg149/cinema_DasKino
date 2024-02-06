@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mapLocation.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,21 +12,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./ticketPAge.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <title>Das Kino</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="../index/index.html">
-          <div class="logo">
-            <p>Das</p>
-            <span>Kino</span>
-          </div>
-        </a>
+        <div class="logo">
+          <p>Das</p>
+          <span>Kino</span>
+        </div>
 
         <ul>
-          <a href="../index/index.html" class="homeBtn">
+          <a href="../index/index.html">
             <li>Home</li>
           </a>
           <a href="../contact/contact.html">
@@ -35,7 +34,6 @@
           <a href="../logIn_signUp/login.html">
             <li class="signInBtn">Sign in</li>
           </a>
-
           <li class="signOutBtn">Sign out</li>
           <li class="userNameNavBar"></li>
         </ul>
@@ -43,36 +41,10 @@
     </header>
 
     <main>
-      <h1>Compra aprovada</h1>
-      <div class="ticketContainer">
-        <div class="left"><img class="imgTicket" src="..." alt="" /></div>
-        <div class="right">
-          <img src="../Images/qrCode/qrCode.png" alt="" />
-          <div class="moveInfo">
-            <div class="titleContainer">
-              <p>Title</p>
-              <p class="title">Dune</p>
-            </div>
-            <div class="dateContainer">
-              <p>Date</p>
-              <p class="date">13/12/2024</p>
-            </div>
-
-            <div class="timeContainer">
-              <p>Time</p>
-              <p class="time">10:00pm</p>
-            </div>
-            <div class="seatsContainer">
-              <p>Seats</p>
-              <div class="seats">J-06</div>
-            </div>
-            <div class="address">
-              <p>Av.Paulista 2345, São Paulo</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h1>Localização Das Kino</h1>
+      <div id="mapid"></div>
     </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
     <footer>
       <a href="../index/index.html">
@@ -81,9 +53,11 @@
           <span>Kino</span>
         </div>
       </a>
-      <a href="../contact/contact.html">
-        <div class="contact">Contact us</div>
+
+      <a class="contact" href="../contact/contact.html">
+        <p>Contact us</p>
       </a>
+
       <div class="SocialMediaContainer">
         <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
 
@@ -93,6 +67,7 @@
       </div>
     </footer>
 
-    <script src="./ticketPage.js" type="module"></script>
+    <script src="./mapLocation.js" type="module"></script>
+    <script src="http://www.bing-com/ap1/maps/mapcontrol?callback/getMap"></script>
   </body>
 </html>

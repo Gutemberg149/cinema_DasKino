@@ -1,4 +1,4 @@
-const ticketContainer = document.querySelector(".ticketContainer");
+const homeBtn = document.querySelector(".homeBtn");
 const img = document.querySelector(".left .imgTicket");
 const title = document.querySelector(".titleContainer .title");
 const date = document.querySelector(".dateContainer .date");
@@ -19,6 +19,17 @@ window.addEventListener("load", () => {
   time.innerHTML = sectionTime;
   seats.innerHTML = arraySeatLocalStorage;
   img.src = dataChosenMovie[0].imgPoster;
+});
+
+homeBtn.addEventListener("click", () => {
+  localStorage.setItem("arraySeatLocalStorage", JSON.stringify(""));
+  localStorage.setItem("numberOfFullPriceSeats", JSON.stringify(""));
+  localStorage.setItem("numberOfHalfPriceSeats", JSON.stringify(""));
+  localStorage.setItem("arraySeatLocalStorage", JSON.stringify(""));
+  localStorage.setItem("idItem", JSON.stringify(""));
+  localStorage.setItem("sectionTime", JSON.stringify(""));
+  localStorage.setItem("dataChosenMovie", JSON.stringify(""));
+  localStorage.setItem("reservationDate", JSON.stringify(""));
 });
 
 //--------------------------Authentication----------------------------------------------
@@ -84,3 +95,8 @@ function signOutUser() {
 }
 
 checkUserAndRetrieveInfo();
+
+// capture the page path the user was on when press sign in btn, for later on come back to it automatically.
+signInBtn.addEventListener("click", () => {
+  localStorage.setItem("lastPage", JSON.stringify("../ticketPage/ticketPAge.html"));
+});

@@ -145,22 +145,18 @@ header .bottom_header .bottom_header_left .btn_moreInfo {
   cursor: pointer;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 399px) {
   body {
     padding: 0rem;
   }
   header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 9vh;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    height: 30vh;
   }
+
   header nav .logo {
     width: 4.5rem;
     height: 1.6rem;
-    margin-left: 0.2rem;
+    margin-left: 1rem;
     border: 1px solid red;
   }
   header nav .logo p {
@@ -178,41 +174,46 @@ header .bottom_header .bottom_header_left .btn_moreInfo {
     width: 80%;
   }
   header nav ul li {
-    font-size: 0.8rem;
+    font-size: 4vw;
     font-weight: 600;
     margin-right: 0.4rem;
   }
   header nav ul .signInBtn {
-    width: 12vw;
+    width: 14vw;
     height: 1.6rem;
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     margin: 0;
   }
   header nav ul .signOutBtn {
-    width: 13vw;
+    width: 15vw;
     height: 1.6rem;
-    font-size: 2.6vw;
+    font-size: 3vw;
+    font-weight: 700;
     margin: 0;
     margin-right: 0.5rem;
+    padding: 0;
+  }
+  header .moveName {
+    top: 80%;
+    left: 1rem;
+    width: fit-content;
+    border-radius: 1rem;
+  }
+
+  header .moveName p {
+    font-size: 1rem;
+    padding: 0 1rem;
   }
 }
-@media screen and (min-device-width: 391px) and (max-device-width: 628px) {
+@media screen and (min-device-width: 400px) and (max-device-width: 699px) {
   body {
-    padding: 0rem 0.5rem;
-  }
-  header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 9vh;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    padding: 0rem;
   }
 
   header nav .logo {
     width: 5rem;
     height: 1.8rem;
-    margin-left: 0.3rem;
+    margin-left: 1rem;
     border: 1px solid red;
   }
   header nav .logo p {
@@ -227,7 +228,7 @@ header .bottom_header .bottom_header_left .btn_moreInfo {
     justify-content: space-between;
     margin-left: 0rem;
     margin-right: 0rem;
-    width: 70%;
+    width: 60%;
     margin-left: 2rem;
   }
   header nav ul li {
@@ -236,17 +237,33 @@ header .bottom_header .bottom_header_left .btn_moreInfo {
     margin-right: 0.4rem;
   }
   header nav ul .signInBtn {
-    width: 12vw;
+    width: 14vw;
     height: 1.6rem;
-    font-size: 2.6vw;
+    font-size: 2.8vw;
     margin: 0;
   }
   header nav ul .signOutBtn {
     width: 15vw;
     height: 1.6rem;
-    font-size: 3.4vw;
+    font-size: 3vw;
+    font-weight: 700;
     margin: 0;
     margin-right: 0.5rem;
+    padding: 0;
+  }
+  header .moveName {
+    top: 80%;
+    left: 1rem;
+    background-color: black;
+    width: fit-content;
+    border-radius: 1rem;
+  }
+
+  header .moveName p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 1rem;
   }
 }
 
@@ -260,7 +277,7 @@ main {
 /* ----------------------------Aqui comeca o left------------------------------------ */
 main .mainInfoContainer {
   width: 30%;
-  height: 33rem;
+  height: 35rem;
   background-color: rgb(239, 239, 239);
   padding: 1rem;
 }
@@ -474,7 +491,8 @@ main details .cards {
 }
 
 main details .cards img {
-  width: 40px;
+  width: 3rem;
+  height: 2.8rem;
 }
 
 .cartaoForm {

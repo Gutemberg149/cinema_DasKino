@@ -155,17 +155,155 @@ finalizar.addEventListener("click", () => {
 
   let handleFinalpage = false;
 
-  if (cardNumber.length === 19 && cardMonth.length === 2 && cardYear.length === 2 && cvcCard.length === 3) {
+  if (cardNumber.length === 10 && cardMonth.length === 2 && cardYear.length === 2 && cvcCard.length === 3) {
     warning.style.display = "none";
-    handleFinalpage = false;
+    handleFinalpage = true;
   } else {
     warning.style.display = "block";
-    handleFinalpage = true;
+    handleFinalpage = false;
   }
-  if (!handleFinalpage) {
+  if (handleFinalpage) {
     location.href = "../ticketPage/ticketPAge.html";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var numericInput = document.getElementById("cCardnumber");
+
+  numericInput.addEventListener("keydown", function (e) {
+    // Allow control keys and numeric keys
+    if (
+      e.key === "Backspace" ||
+      e.key === "Tab" ||
+      e.key === "Escape" ||
+      e.key === "Enter" ||
+      e.key === "ArrowLeft" ||
+      e.key === "ArrowRight" ||
+      e.key === "Delete" ||
+      (!e.shiftKey && !e.altKey && "0123456789".includes(e.key))
+    ) {
+      return; // let it happen, don't do anything
+    } else {
+      e.preventDefault(); // Prevent the default action to stop typing non-numeric keys
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var numericInput = document.getElementById("cardMonthValid");
+
+  numericInput.addEventListener("keydown", function (e) {
+    // Allow control keys and numeric keys
+    if (
+      e.key === "Backspace" ||
+      e.key === "Tab" ||
+      e.key === "Escape" ||
+      e.key === "Enter" ||
+      e.key === "ArrowLeft" ||
+      e.key === "ArrowRight" ||
+      e.key === "Delete" ||
+      // Allow: Ctrl/cmd+A, Ctrl/cmd+C, Ctrl/cmd+X
+      ((e.ctrlKey || e.metaKey) && (e.key === "a" || e.key === "c" || e.key === "x")) ||
+      // Allow numeric keys
+      (!e.shiftKey && !e.altKey && "0123456789".includes(e.key))
+    ) {
+      return; // let it happen, don't do anything
+    } else {
+      e.preventDefault(); // Prevent the default action to stop typing non-numeric keys
+    }
+  });
+
+  numericInput.addEventListener("input", function () {
+    var value = parseInt(this.value, 10);
+
+    if (this.value.length > 2 || isNaN(value) || value < 0 || value > 12) {
+      // Clear the input if it's not a valid year
+      this.value = null;
+    }
+  });
+
+  numericInput.addEventListener("blur", function () {
+    // Check if the value is a single digit number (1 through 9)
+    var value = this.value;
+    var intValue = parseInt(value, 10);
+
+    if (!isNaN(intValue) && intValue > 0 && intValue < 10) {
+      // set in front of '0' to single digit numbers
+      this.value = "0" + intValue;
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var numericInput = document.getElementById("cardYearValid");
+
+  numericInput.addEventListener("keydown", function (e) {
+    if (
+      e.key === "Backspace" ||
+      e.key === "Tab" ||
+      e.key === "Escape" ||
+      e.key === "Enter" ||
+      e.key === "ArrowLeft" ||
+      e.key === "ArrowRight" ||
+      e.key === "Delete" ||
+      ((e.ctrlKey || e.metaKey) && (e.key === "a" || e.key === "c" || e.key === "x")) ||
+      (!e.shiftKey && !e.altKey && "0123456789".includes(e.key))
+    ) {
+      return;
+    } else {
+      e.preventDefault();
+    }
+  });
+
+  numericInput.addEventListener("input", function () {
+    var value = parseInt(this.value, 10);
+
+    if (this.value.length > 2 || isNaN(value) || value < 0 || value > 50) {
+      // Clear the input if it's not a valid year
+      this.value = null;
+    }
+  });
+
+  numericInput.addEventListener("blur", function () {
+    var value = this.value;
+    var intValue = parseInt(value, 10);
+
+    if (!isNaN(intValue) && intValue > 0 && intValue < 10) {
+      this.value = "0" + intValue;
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var numericInput = document.getElementById("cvc");
+
+  numericInput.addEventListener("keydown", function (e) {
+    if (
+      e.key === "Backspace" ||
+      e.key === "Tab" ||
+      e.key === "Escape" ||
+      e.key === "Enter" ||
+      e.key === "ArrowLeft" ||
+      e.key === "ArrowRight" ||
+      e.key === "Delete" ||
+      ((e.ctrlKey || e.metaKey) && (e.key === "a" || e.key === "c" || e.key === "x")) ||
+      (!e.shiftKey && !e.altKey && "0123456789".includes(e.key))
+    ) {
+      return;
+    } else {
+      e.preventDefault();
+    }
+  });
+
+  numericInput.addEventListener("input", function () {
+    var value = parseInt(this.value, 10);
+
+    if (this.value.length > 3 || isNaN(value) || value < 0 || value > 999) {
+      this.value = null;
+    }
+  });
+});
+
 //--------------------------Authentication----------------------------------------------
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";

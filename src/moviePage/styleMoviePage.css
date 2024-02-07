@@ -268,7 +268,7 @@ header nav ul li a:hover {
 
 .containerTrailer {
   width: 100%;
-  height: 80vh;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;

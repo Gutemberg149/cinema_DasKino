@@ -282,7 +282,106 @@ header #modal .modal_header i:hover {
 #modal.hide {
   top: 0;
 }
-@media screen and (max-width: 399px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) and (-webkit-min-device-pixel-ratio: 2) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
+  header nav .logo {
+    width: 4rem;
+    height: 1.5rem;
+    margin-left: 0.2rem;
+  }
+  header nav .logo p {
+    font-size: 0.5rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 0.6rem;
+  }
+  header nav ul {
+    margin-left: 0.2rem;
+  }
+  header nav ul li {
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.3rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 2.6rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
+  }
+  header nav ul .signOutBtn {
+    width: 2.6rem;
+    height: 1.4rem;
+    font-size: 0.5rem;
+  }
+  /* ------------------------------------------------------------------------- */
+  header .bottom_header {
+    width: 100vw;
+    margin-left: 0;
+    padding: 0 0.3rem;
+  }
+  header .bottom_header .bottom_header_left {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: end;
+    width: 50%;
+    height: 100%;
+  }
+
+  header .bottom_header .bottom_header_left .bottom_header_left_bottom {
+    flex-direction: column;
+    align-items: start;
+    height: 20%;
+  }
+  header .bottom_header .bottom_header_left img {
+    width: 90px;
+    margin-bottom: 0.5rem;
+  }
+
+  header .bottom_header .bottom_header_left .btn_moreInfo {
+    width: 4.5rem;
+    height: 1.2rem;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+  header .bottom_header .bottom_header_left .timeTable {
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  header .bottom_header .bottom_header_left .timeTable p:first-child {
+    margin-right: 0.4rem;
+  }
+  header .bottom_header .bottom_header_right p {
+    font-size: 0.8rem;
+  }
+  header .bottom_header .bottom_header_right .playTrailer {
+    width: 2rem;
+    height: 2rem;
+    outline: 7px solid rgba(255, 0, 0, 0.433);
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 600px) {
   header {
     display: flex;
     flex-direction: column;
@@ -381,7 +480,7 @@ header #modal .modal_header i:hover {
   }
 }
 
-@media screen and (min-device-width: 400px) and (max-device-width: 599px) {
+@media only screen and (min-device-width: 601px) and (max-device-width: 900px) {
   header {
     display: flex;
     flex-direction: column;
@@ -501,7 +600,7 @@ header #modal .modal_header i:hover {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1100px) {
+@media only screen and (min-device-width: 901px) and (max-device-width: 1300px) {
   header {
     display: flex;
     flex-direction: column;
@@ -633,6 +732,9 @@ main .topMain .searchContainer {
   align-items: center;
   justify-content: space-between;
 }
+main .topMain .searchContainer .search_enter_Box {
+  display: flex;
+}
 main .topMain .searchContainer .alertOfInputError {
   margin-right: 1rem;
   display: none;
@@ -659,6 +761,9 @@ main .topMain .searchContainer .search input {
 }
 main .topMain .searchContainer .search input:focus {
   outline: none;
+}
+main .topMain .searchContainer .search ::placeholder {
+  font-size: 0.7rem;
 }
 main .topMain .searchContainer .search .fa-magnifying-glass {
   color: rgb(215, 212, 212);
@@ -766,30 +871,208 @@ main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .barDivision 
 }
 
 /* this media query is for the top bar search to become collum fitting small creens. */
-@media only screen and (max-width: 590px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) {
   .topMain {
     flex-direction: column;
   }
-  .searchContainer {
+  main .topMain .moviesFilter span {
+    font-size: 0.5rem;
+    margin-left: 0.2rem;
+  }
+  main .topMain .searchContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  main .topMain .searchContainer .alertOfInputError {
+    margin-right: 0rem;
+    display: none;
+  }
+  main .topMain .searchContainer .alertOfInputError p {
+    font-size: 0.6rem;
+    margin-bottom: 0.3rem;
+  }
+
+  main .topMain .searchContainer .search {
+    height: 1.5rem;
+    width: 75%;
+  }
+  main .topMain .searchContainer .search input {
+    padding-left: 0.2rem;
+  }
+
+  main .topMain .searchContainer .search ::placeholder {
+    font-size: 0.6rem;
+  }
+
+  main .topMain .searchContainer .search .fa-magnifying-glass {
+    display: none;
+  }
+  main .topMain .searchContainer .enter {
+    width: 25%;
+  }
+  /* ----------Main movies container-------- */
+
+  main .moviePlayinContainer {
     margin-top: 0.5rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer {
+    width: 40%;
+    height: 10rem;
+    margin: 0.5rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .posterContainer {
+    height: 70%;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox {
+    margin-top: 0rem;
+    padding: 0rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .title {
+    font-size: 0.6rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo {
+    height: 0.8rem;
+    margin-top: 0.2rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .duration,
+  .typeOfMovie {
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 600px) {
+  .topMain {
+    flex-direction: column;
+  }
+  main .topMain .moviesFilter span {
+    font-size: 0.8rem;
+    margin-left: 0.6rem;
+  }
+  main .topMain .searchContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  main .topMain .searchContainer .alertOfInputError {
+    margin-right: 0rem;
+    display: none;
+    margin-bottom: 0.6rem;
+  }
+  main .topMain .searchContainer .alertOfInputError p {
+    font-size: 0.7rem;
+  }
+
+  main .topMain .searchContainer .search {
+    height: 1.5rem;
+    width: 75%;
+  }
+  main .topMain .searchContainer .search input {
+    padding-left: 0.2rem;
+  }
+
+  main .topMain .searchContainer .search ::placeholder {
+    font-size: 0.6rem;
+    padding-bottom: 0.8rem;
+  }
+
+  main .topMain .searchContainer .search .fa-magnifying-glass {
+    display: none;
+  }
+  main .topMain .searchContainer .enter {
+    width: 25%;
+  }
+  /* ----------Main movies container-------- */
+
+  main .moviePlayinContainer {
+    margin-top: 1.5rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer {
+    width: 10rem;
+    height: 18rem;
+    margin: 0.5rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .posterContainer {
+    height: 70%;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox {
+    margin-top: 0rem;
+    padding: 0.7rem 1rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .title {
+    font-size: 0.8rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo {
+    height: 1rem;
+    margin-top: 0.2rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .duration,
+  .typeOfMovie {
+    font-size: 0.8rem;
   }
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
-  main {
-    background-color: black;
-    height: auto;
-    padding: 0 0.5rem;
-  }
+@media only screen and (min-device-width: 601px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* ----------Main movies container-------- */
+
   main .moviePlayinContainer {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
   main .moviePlayinContainer .movieBoxContainer {
-    width: 45%;
-    height: 60vh;
-    box-shadow: rgba(149, 157, 165, 0.304) 0px 8px 24px;
-    margin: 0.5rem;
-    cursor: pointer;
+    width: 15rem;
+    height: 24rem;
+    margin: 0.7rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .posterContainer {
+    height: 70%;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox {
+    margin-top: 0rem;
+    padding: 1rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .title {
+    font-size: 1rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo {
+    height: 1rem;
+    margin-top: 0.2rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .duration,
+  .typeOfMovie {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* ----------Main movies container-------- */
+
+  main .moviePlayinContainer {
+    margin-top: 1.5rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer {
+    width: 17rem;
+    height: 28rem;
+    margin: 0.7rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .posterContainer {
+    height: 70%;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox {
+    margin-top: 0rem;
+    padding: 1rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .title {
+    font-size: 1rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo {
+    height: 1rem;
+    margin-top: 0.2rem;
+  }
+  main .moviePlayinContainer .movieBoxContainer .infoBox .bottomInfo .duration,
+  .typeOfMovie {
+    font-size: 1rem;
   }
 }
 
@@ -850,6 +1133,47 @@ footer .SocialMediaContainer i:hover {
   color: red;
 }
 
+@media screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  footer {
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.2rem;
+  }
+
+  footer .logo {
+    width: 3rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+
+  footer .logo p {
+    font-size: 0.7rem;
+  }
+  footer .logo span {
+    font-size: 0.7rem;
+  }
+  footer .contact {
+    font-size: 0.7rem;
+  }
+  footer .SocialMediaContainer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.2rem;
+  }
+  footer .SocialMediaContainer i {
+    color: white;
+    margin: 0rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+}
 @media screen and (min-device-width: 375px) and (max-device-width: 700px) {
   footer {
     height: 18vh;

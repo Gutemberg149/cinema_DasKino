@@ -90,7 +90,7 @@ header nav .logo span {
 header nav ul {
   display: flex;
   align-items: center;
-  margin-right: 1rem;
+  padding-right: 1rem;
 }
 
 header nav ul li {
@@ -153,10 +153,8 @@ header nav ul li a:hover {
 @media only screen and (min-device-width: 200px) and (max-device-width: 310px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     height: auto;
-    margin-top: 0.5rem;
   }
   header nav ul {
     width: 100%;
@@ -199,12 +197,12 @@ header nav ul li a:hover {
     font-size: 0.5rem;
   }
 }
-@media only screen and (min-device-width: 311px) and (max-device-width: 509px) {
+@media only screen and (min-device-width: 311px) and (max-device-width: 518px) {
   header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 0.8rem;
+    /* height: 7vh; */
+    margin-bottom: 1rem;
   }
   header nav ul {
     width: 100%;
@@ -248,7 +246,7 @@ header nav ul li a:hover {
   }
 }
 
-@media only screen and (min-device-width: 510px) and (max-device-width: 900px) {
+@media only screen and (min-device-width: 519px) and (max-device-width: 900px) {
   header {
     display: flex;
     flex-direction: column;
@@ -263,16 +261,16 @@ header nav ul li a:hover {
     margin-right: 0.5rem;
   }
   header nav .logo {
-    width: 7rem;
-    height: 2.2rem;
+    width: 6rem;
+    height: 2rem;
     margin-left: 0.4rem;
   }
   header nav .logo p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   header nav .logo span {
     color: red;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   header nav ul {
     margin-left: 0.5rem;
@@ -933,6 +931,9 @@ header nav ul li a:hover {
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 600px) {
+  .timeTable {
+    margin-bottom: 0.5rem;
+  }
   .chooseTime1,
   .chooseTime2 {
     background-color: rgba(0, 0, 0, 0.587);
@@ -957,7 +958,7 @@ header nav ul li a:hover {
     padding: 0;
   }
   .goToSeat {
-    width: 12rem;
+    width: 9rem;
     height: 1.5rem;
     padding: 1rem 0.5rem;
     margin-bottom: 1rem;
@@ -965,7 +966,27 @@ header nav ul li a:hover {
   }
 
   .goToSeat p {
-    font-size: 0.9rem;
+    font-size: 0.65rem;
+    color: rgb(248, 244, 241);
+  }
+  .goToSeat i {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (min-device-width: 601px) and (max-device-width: 900px) {
+  .timeTable {
+    margin-bottom: 0.5rem;
+  }
+  .goToSeat {
+    width: 11rem;
+    height: 1.5rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+  }
+
+  .goToSeat p {
+    font-size: 0.8rem;
     color: rgb(248, 244, 241);
   }
 }

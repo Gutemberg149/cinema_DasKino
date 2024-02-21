@@ -678,7 +678,7 @@ main .btnContainer .btnContinue {
 }
 
 /* this part is for the screen and the seats */
-@media screen and (min-device-width: 200px) and (max-device-width: 374px) {
+@media screen and (min-device-width: 200px) and (max-device-width: 290px) {
   main {
     padding: 0.2rem 0.3rem;
   }
@@ -754,7 +754,7 @@ main .btnContainer .btnContinue {
 
   main .seatContainer .chair .row .seat {
     position: relative;
-    width: 0.9rem;
+    width: 2.8vh;
     height: 0.9rem;
     font-size: 0.6rem;
     margin-bottom: 0.7rem;
@@ -822,7 +822,151 @@ main .btnContainer .btnContinue {
     margin-top: 0.4rem;
   }
 }
-@media screen and (min-device-width: 375px) and (max-device-width: 600px) {
+@media screen and (min-device-width: 291px) and (max-device-width: 374px) {
+  main {
+    padding: 0.2rem 0.3rem;
+  }
+
+  main .showTime {
+    margin-top: 0.5rem;
+  }
+  main .showTime .top {
+    font-size: 0.6rem;
+  }
+
+  main .showTime .timeTable p {
+    font-size: 0.8rem;
+  }
+
+  main h2 {
+    font-size: 0.7rem;
+    margin: 1.1rem 0 0.5rem 0;
+  }
+  main .ticketLegend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: 0;
+    padding-left: 0;
+  }
+
+  main .ticketLegend .legendContainer {
+    display: flex;
+    align-items: center;
+  }
+  main .ticketLegend .legendContainer .square {
+    margin-right: 0.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  main .screenContainer {
+    height: 2.5rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  main .screenContainer .screen {
+    width: 100%;
+    margin-top: 3rem;
+    clip-path: polygon(0.3% 0%, 100% 0%, 92.3% 100%, 8.1% 100%);
+    background-color: rgb(220, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .seatContainer {
+    margin-top: 1rem;
+    margin-right: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main .seatContainer .space {
+    width: 0.5rem;
+  }
+
+  main .seatContainer .chair {
+    width: 100%;
+  }
+  main .seatContainer .chair .row span {
+    margin-bottom: 0.3rem;
+    font-size: 0.6rem;
+  }
+
+  main .seatContainer .chair .row .seat {
+    position: relative;
+    width: 4vh;
+    height: 1rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.6rem;
+  }
+  main .seatContainer .chair .row .rowNumber {
+    width: 0.4rem;
+    height: 1.12rem;
+    background-color: transparent;
+    font-size: 0.55rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  main .seatContainer .chair .row .seat .armLeft {
+    display: none;
+  }
+  main .seatContainer .chair .row .seat .armRight {
+    display: none;
+  }
+  main .seatContainer .chair .row .seatEmpty {
+    width: 1rem;
+  }
+
+  .unavailable {
+    background-color: red !important;
+  }
+  .premiun {
+    width: 0.9rem;
+    height: 0.9rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.7rem;
+  }
+  main .seatsSelected {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 1rem;
+  }
+  main .seatsSelected .selectedContainer .titleSelected {
+    margin-right: 0.2rem;
+    font-size: 0.6rem;
+  }
+  main .seatsSelected .selectedContainer .selected {
+    font-size: 0.6rem;
+  }
+
+  main .btnContainer .overLayBtnContinue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  main .btnContainer .btnContinue {
+    display: none;
+    width: 6rem;
+    height: 1.3rem;
+    font-size: 0.5rem;
+    font-weight: 400;
+    border: 1px solid red;
+    margin-top: 0.4rem;
+  }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 450px) {
   main {
     padding: 0.5rem 1rem;
   }
@@ -959,6 +1103,143 @@ main .btnContainer .btnContinue {
     margin-top: 0.4rem;
   }
 }
+@media screen and (min-device-width: 451px) and (max-device-width: 600px) {
+  main {
+    padding: 0.5rem 1rem;
+  }
+
+  main .showTime {
+    margin-top: 0.6rem;
+  }
+  main .showTime .top {
+    font-size: 0.7rem;
+  }
+
+  main .showTime .timeTable p {
+    font-size: 0.95rem;
+  }
+
+  main h2 {
+    font-size: 0.8rem;
+    margin: 1.1rem 0 0.5rem 0;
+  }
+
+  main .ticketLegend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: 0;
+    padding-left: 0;
+  }
+
+  main .ticketLegend .legendContainer {
+    display: flex;
+    align-items: center;
+  }
+  main .ticketLegend .legendContainer .square {
+    margin-right: 0.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  main .screenContainer {
+    height: 2.5rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  main .screenContainer .screen {
+    width: 100%;
+    margin-top: 3rem;
+    clip-path: polygon(0.3% 0%, 100% 0%, 92.3% 100%, 8.1% 100%);
+    background-color: rgb(220, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .seatContainer {
+    margin-top: 1.5rem;
+    margin-right: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main .seatContainer .space {
+    width: 0.5rem;
+  }
+
+  main .seatContainer .chair {
+    width: 100%;
+  }
+  main .seatContainer .chair .row span {
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  main .seatContainer .chair .row .seat {
+    position: relative;
+    width: 2rem;
+    height: 1.4rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.7rem;
+  }
+  main .seatContainer .chair .row .rowNumber {
+    width: 0.4rem;
+    height: 1.3rem;
+    background-color: transparent;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.2rem;
+  }
+
+  main .seatContainer .chair .row .seatEmpty {
+    width: 1rem;
+  }
+
+  .premiun {
+    width: 1.3rem;
+    height: 1.1rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.7rem;
+  }
+  main .seatsSelected {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 1rem;
+  }
+  main .seatsSelected .selectedContainer .titleSelected {
+    margin-right: 0.2rem;
+    font-size: 0.6rem;
+  }
+  main .seatsSelected .selectedContainer .selected {
+    font-size: 0.6rem;
+  }
+
+  main .btnContainer .overLayBtnContinue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  main .btnContainer .btnContinue {
+    display: none;
+    width: 8rem;
+    height: 1.3rem;
+    font-size: 0.6rem;
+    font-weight: 400;
+    border: 1px solid red;
+    margin-top: 0.4rem;
+  }
+}
 @media screen and (min-device-width: 601px) and (max-device-width: 999px) {
   main {
     padding: 1.5rem;
@@ -1013,62 +1294,6 @@ main .btnContainer .btnContinue {
 
   main .seatContainer .chair {
     width: 60%;
-  }
-}
-@media screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
-  main {
-    padding: 1.5rem;
-  }
-  main h2 {
-    font-size: 1.4rem;
-    margin: 1.1rem 0 0.5rem 0;
-  }
-  main .ticketLegend {
-    display: flex;
-  }
-
-  main .ticketLegend .legendContainer {
-    display: flex;
-    align-items: center;
-  }
-  main .ticketLegend .legendContainer .square {
-    margin-right: 0.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-  }
-
-  main .screenContainer {
-    height: 2.5rem;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-  }
-  main .screenContainer .screen {
-    width: 80%;
-    margin-top: 3rem;
-    clip-path: polygon(0.3% 0%, 100% 0%, 92.3% 100%, 8.1% 100%);
-    background-color: rgb(220, 218, 218);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .seatContainer {
-    width: 55%;
-    margin-top: 2rem;
-    margin-right: 0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  main .seatContainer .space {
-    width: 1.5rem;
-  }
-
-  main .seatContainer .chair {
-    width: 80%;
   }
 }
 

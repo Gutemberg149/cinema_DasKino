@@ -526,8 +526,8 @@ input:focus {
     width: 100%;
   }
   .inputBox span {
-    padding: 8px;
-    font-size: 0.9rem;
+    padding: 6px;
+    font-size: 0.7rem;
   }
   .textAreaBox .label {
     color: white;

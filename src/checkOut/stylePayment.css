@@ -30,12 +30,12 @@ header {
 
 header nav {
   position: relative;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-top: 0.6rem;
 }
 header nav .logo {
   width: 6rem;
@@ -147,125 +147,196 @@ header .bottom_header .bottom_header_left .btn_moreInfo {
   cursor: pointer;
 }
 
-@media screen and (max-width: 399px) {
-  body {
-    padding: 0rem;
-  }
+@media only screen and (min-device-width: 200px) and (max-device-width: 310px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
-    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3rem;
+    margin-top: 0rem;
   }
-
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
   header nav .logo {
-    width: 4.5rem;
-    height: 1.6rem;
-    margin-left: 1rem;
-    border: 1px solid red;
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-left: 0rem;
   }
   header nav .logo p {
+    font-size: 0.4rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 0.5rem;
+  }
+  header nav ul {
+    margin-left: 0.1rem;
+    margin-right: 0;
+  }
+  header nav ul li {
+    font-size: 0.5rem;
+    font-weight: 500;
     color: white;
-    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 2.4rem;
+    height: 1.2rem;
+    font-size: 0.6rem;
+  }
+  header nav ul .signOutBtn {
+    width: 2.4rem;
+    height: 1.2rem;
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-device-width: 311px) and (max-device-width: 509px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.8rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0rem;
+  }
+  header nav .logo {
+    width: 3.5rem;
+    height: 1.7rem;
+    margin-left: 0.3rem;
+  }
+  header nav .logo p {
+    font-size: 0.7rem;
   }
   header nav .logo span {
     color: red;
     font-size: 0.9rem;
   }
   header nav ul {
-    justify-content: end;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    width: 80%;
+    margin-left: 0.4rem;
+    margin-right: 0;
   }
   header nav ul li {
-    font-size: 4vw;
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.5rem;
+    cursor: pointer;
   }
   header nav ul .signInBtn {
-    width: 14vw;
-    height: 1.6rem;
-    font-size: 2.8vw;
-    margin: 0;
+    width: 3rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
   }
   header nav ul .signOutBtn {
-    width: 15vw;
-    height: 1.6rem;
-    font-size: 3vw;
-    font-weight: 700;
-    margin: 0;
-    margin-right: 0.5rem;
-    padding: 0;
-  }
-  header .moveName {
-    top: 80%;
-    left: 1rem;
-    width: fit-content;
-    border-radius: 1rem;
-  }
-
-  header .moveName p {
-    font-size: 1rem;
-    padding: 0 1rem;
+    width: 3.4rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
   }
 }
-@media screen and (min-device-width: 400px) and (max-device-width: 699px) {
-  body {
-    padding: 0rem;
-  }
 
+@media only screen and (min-device-width: 510px) and (max-device-width: 900px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.5rem;
+  }
   header nav .logo {
-    width: 5rem;
-    height: 1.8rem;
-    margin-left: 1rem;
-    border: 1px solid red;
+    width: 7rem;
+    height: 2.2rem;
+    margin-left: 0.4rem;
   }
   header nav .logo p {
-    color: white;
     font-size: 1rem;
   }
   header nav .logo span {
     color: red;
+    font-size: 1.1rem;
+  }
+  header nav ul {
+    margin-left: 0.5rem;
+  }
+  header nav ul li {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.8rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 4rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  header nav ul .signOutBtn {
+    width: 4.1rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 901px) and (max-device-width: 1300px) {
+  header {
+    display: flex;
+    flex-direction: null;
+    align-items: center;
+    margin: 0rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
+  header nav .logo {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+  }
+  header nav .logo p {
+    font-size: 1rem;
+  }
+  header nav .logo span {
     font-size: 1rem;
   }
   header nav ul {
-    justify-content: space-between;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    width: 50%;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
   }
   header nav ul li {
-    font-size: 2.5vw;
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
   }
   header nav ul .signInBtn {
-    width: 10vw;
-    height: 1.3rem;
-    font-size: 2vw;
-    margin: 0;
+    width: 3.5rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
   }
   header nav ul .signOutBtn {
-    width: 10vw;
-    height: 1.3rem;
-    font-size: 2vw;
-    font-weight: 700;
-    margin: 0;
-    margin-right: 0rem;
-    padding: 0;
-  }
-  header .moveName {
-    top: 80%;
-    left: 1rem;
-    background-color: black;
-    width: fit-content;
-    border-radius: 1rem;
-  }
-
-  header .moveName p {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    padding: 0 1rem;
+    width: 4.6rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -277,10 +348,14 @@ main {
   height: 100vh;
   background-color: white;
 }
-/* ----------------------------Aqui comeca o left------------------------------------ */
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  main {
+    padding: 0.5rem;
+  }
+}
+/* ----------------------------Aqui comeca main o left------------------------------------ */
 main .mainInfoContainer {
   width: 30%;
-  /* height: 35rem; */
   background-color: rgb(239, 239, 239);
   padding: 1rem;
 }
@@ -366,7 +441,16 @@ main .mainInfoContainer .bottomBox .typeOFtickets {
   margin: 0;
   padding-bottom: 0.5rem;
 }
-
+.chooseTicketContainer {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+}
+.chooseTicket {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: red;
+}
 main .mainInfoContainer .bottomBox .typeOFtickets .containerTypeTicket {
   display: flex;
   align-items: center;
@@ -417,16 +501,6 @@ main .mainInfoContainer .bottomBox .numbOfTickets {
   margin-top: 0.5rem;
 }
 
-.chooseTicketContainer {
-  display: flex;
-  align-items: center;
-  height: 1rem;
-}
-.chooseTicket {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: red;
-}
 main .mainInfoContainer .bottomBox .tag {
   margin-right: 0.5rem;
   font-weight: 300;
@@ -440,6 +514,121 @@ main .mainInfoContainer .bottomBox .total {
   border-top: 1px solid gray;
   padding-top: 1rem;
   margin-top: 0.5rem;
+}
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  main .mainInfoContainer .bottomBox .seats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  main .mainInfoContainer .bottomBox .poltronas {
+    font-size: 0.8rem;
+  }
+
+  main .mainInfoContainer .bottomBox .seats .seat {
+    margin-bottom: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .chooseTicket {
+    font-size: 0.75rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets {
+    font-size: 0.8rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .containerTypeTicket {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .containerTypeTicket .typeTicket {
+    width: 3rem;
+    font-size: 0.8rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .containerTypeTicket .ticketPrice {
+    width: 3rem;
+    font-size: 0.8rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .boxNumbOfticket {
+    font-size: 0.8rem;
+  }
+  main .mainInfoContainer .bottomBox .typeOFtickets .boxNumbOfticket .calc {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .boxNumbOfticket .calc:hover {
+    background-color: rgba(128, 128, 128, 0.191);
+  }
+  main .mainInfoContainer .bottomBox .total {
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 600px) {
+  main .mainInfoContainer .topBox {
+    padding: 0 1rem;
+  }
+
+  main .mainInfoContainer .middleBox {
+    margin: 1.5rem 1rem;
+  }
+
+  main .mainInfoContainer .bottomBox {
+    margin: 0.4rem 1rem;
+  }
+
+  main .mainInfoContainer .bottomBox .seats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  main .mainInfoContainer .bottomBox .poltronas {
+    font-size: 0.8rem;
+  }
+
+  main .mainInfoContainer .bottomBox .seats .seat {
+    margin-bottom: 0.4rem;
+    font-size: 0.7rem;
+  }
+
+  .chooseTicket {
+    font-size: 0.9rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets {
+    font-size: 1rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .containerTypeTicket {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .containerTypeTicket .typeTicket {
+    width: 4rem;
+    font-size: 1rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .containerTypeTicket .ticketPrice {
+    width: 4rem;
+    font-size: 1rem;
+  }
+
+  main .mainInfoContainer .bottomBox .typeOFtickets .boxNumbOfticket {
+    font-size: 1rem;
+  }
+
+  main .mainInfoContainer .bottomBox .total {
+    font-size: 1rem;
+    font-weight: 600;
+  }
 }
 
 /* -----------------------------Here starts right */
@@ -476,10 +665,13 @@ main details summary {
   height: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-left: 0.3rem;
   cursor: pointer;
 }
-
+main details summary:focus {
+  outline: none;
+}
 main details {
   display: flex;
   align-items: center;
@@ -605,6 +797,68 @@ main .bottomPage .securityBox i {
   margin-right: 0.3rem;
 }
 
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  main {
+    height: auto;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  main .mainInfoContainer {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  main .paymentContainer {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(239, 239, 239);
+    padding: 0.5rem 1rem;
+  }
+
+  main .paymentContainer h2 {
+    font-size: 0.8rem;
+  }
+  main details summary {
+    font-size: 0.8rem;
+  }
+  main details .cards img {
+    width: 2rem;
+    height: 2rem;
+  }
+  main .paymentContainer .pgIntructions {
+    margin-bottom: 0.5rem;
+  }
+  #cardMonthValid {
+    width: 2.1rem;
+    padding-right: 0.2rem;
+  }
+  #cardYearValid {
+    width: 2.1rem;
+    padding-left: 0.5rem;
+  }
+  .totalApagar {
+    padding-left: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.3rem;
+  }
+
+  .totalText {
+    font-size: 0.8rem;
+  }
+  .valorTotal {
+    font-size: 0.9rem;
+  }
+  main .bottomPage {
+    margin-top: 0.5rem;
+  }
+  main .bottomPage .finalizar {
+    width: 6rem;
+    height: 1.8rem;
+    font-size: 0.6rem;
+  }
+}
 @media screen and (max-width: 599px) {
   main {
     height: auto;
@@ -622,11 +876,18 @@ main .bottomPage .securityBox i {
     width: 100%;
     height: fit-content;
     background-color: rgb(239, 239, 239);
-    padding: 0rem 1rem;
+    padding: 1rem;
   }
 
   main .paymentContainer h2 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+  }
+  main details summary {
+    font-size: 0.8rem;
+  }
+  main details .cards img {
+    width: 2rem;
+    height: 2rem;
   }
   main .paymentContainer .pgIntructions {
     margin-bottom: 0.5rem;
@@ -638,6 +899,18 @@ main .bottomPage .securityBox i {
   #cardYearValid {
     width: 2.1rem;
     padding-left: 0.5rem;
+  }
+  .totalApagar {
+    padding-left: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-right: 0.3rem;
+  }
+
+  .totalText {
+    font-size: 0.8rem;
+  }
+  .valorTotal {
+    font-size: 0.9rem;
   }
   main .bottomPage {
     margin-top: 0.5rem;
@@ -655,7 +928,7 @@ main .bottomPage .securityBox i {
   main .mainInfoContainer {
     width: 52%;
     height: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -694,7 +967,7 @@ main .bottomPage .securityBox i {
   main .mainInfoContainer {
     width: 52%;
     height: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -779,7 +1052,48 @@ footer .SocialMediaContainer i {
 footer .SocialMediaContainer i:hover {
   color: red;
 }
-@media screen and (max-width: 699px) {
+@media screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  footer {
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.2rem;
+  }
+
+  footer .logo {
+    width: 3rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+
+  footer .logo p {
+    font-size: 0.7rem;
+  }
+  footer .logo span {
+    font-size: 0.7rem;
+  }
+  footer .contact {
+    font-size: 0.7rem;
+  }
+  footer .SocialMediaContainer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.2rem;
+  }
+  footer .SocialMediaContainer i {
+    color: white;
+    margin: 0rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 700px) {
   footer {
     height: 18vh;
     width: 100vw;
@@ -788,69 +1102,7 @@ footer .SocialMediaContainer i:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 0rem;
-  }
-
-  footer .logo {
-    width: 5rem;
-    height: 2rem;
-    margin-left: 0rem;
-  }
-
-  footer .logo p {
-    font-size: 1.1rem;
-  }
-  footer .logo span {
-    font-size: 1.1rem;
-  }
-  footer .SocialMediaContainer {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-@media screenand and (min-width: 700px) and (max-width: 1200px) {
-  footer {
-    height: 10vh;
-    width: 100vw;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 0rem;
-  }
-
-  footer .logo {
-    width: 5rem;
-    height: 2rem;
-    margin-left: 0rem;
-  }
-
-  footer .logo p {
-    font-size: 1.1rem;
-  }
-  footer .logo span {
-    font-size: 1.1rem;
-  }
-  footer .SocialMediaContainer {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-@media (orientation: landscape) {
-  footer {
-    height: 10vh;
-    width: 100vw;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 0rem;
+    padding-bottom: 1rem;
   }
 
   footer .logo {

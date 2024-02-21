@@ -79,7 +79,7 @@ header nav ul .signOutBtn {
   justify-content: center;
   align-items: center;
   width: fit-content;
-  padding: 0 0.5rem;
+  padding: 0 0.2rem;
   height: 1.5rem;
   border-radius: 0.2rem;
   background-color: red;
@@ -133,125 +133,269 @@ header .moveName p {
   padding: 0 1rem;
 }
 
-@media screen and (max-width: 399px) {
-  body {
-    padding: 0rem;
-  }
+@media only screen and (min-device-width: 200px) and (max-device-width: 310px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
-    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 0.5rem;
+    height: 4rem;
   }
 
   header nav .logo {
-    width: 4.5rem;
-    height: 1.6rem;
-    margin-left: 1rem;
-    border: 1px solid red;
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-left: 0rem;
   }
   header nav .logo p {
+    font-size: 0.4rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 0.5rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+    padding: 0;
+  }
+  header nav ul {
+    margin-left: 0.1rem;
+    margin-right: 0;
+  }
+  header nav ul li {
+    font-size: 0.5rem;
+    font-weight: 500;
     color: white;
-    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 2.4rem;
+    height: 1.2rem;
+    font-size: 0.6rem;
+  }
+  header nav ul .signOutBtn {
+    width: 2.4rem;
+    height: 1.2rem;
+    font-size: 0.5rem;
+    padding: 0 0.1rem;
+  }
+  header .moveName {
+    position: absolute;
+    top: 75%;
+    left: 0.3rem;
+    background-color: black;
+    width: fit-content;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  header .moveName p {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 0.5rem;
+  }
+}
+@media only screen and (min-device-width: 311px) and (max-device-width: 509px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.8rem;
+    height: 5rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0rem;
+  }
+  header nav .logo {
+    width: 3.5rem;
+    height: 1.7rem;
+    margin-left: 0.3rem;
+  }
+  header nav .logo p {
+    font-size: 0.7rem;
   }
   header nav .logo span {
     color: red;
     font-size: 0.9rem;
   }
   header nav ul {
-    justify-content: end;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    width: 80%;
+    margin-left: 0.4rem;
+    margin-right: 0;
   }
   header nav ul li {
-    font-size: 4vw;
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.5rem;
+    cursor: pointer;
   }
   header nav ul .signInBtn {
-    width: 14vw;
-    height: 1.6rem;
-    font-size: 2.8vw;
-    margin: 0;
+    width: 3rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
   }
   header nav ul .signOutBtn {
-    width: 15vw;
-    height: 1.6rem;
-    font-size: 3vw;
-    font-weight: 700;
-    margin: 0;
-    margin-right: 0.5rem;
-    padding: 0;
+    width: 3.4rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
+    padding: 0 0.1rem;
   }
   header .moveName {
-    top: 80%;
-    left: 1rem;
+    position: absolute;
+    top: 70%;
+    left: 0.4rem;
+    background-color: black;
     width: fit-content;
     border-radius: 1rem;
+    margin-bottom: 1rem;
   }
 
   header .moveName p {
-    font-size: 1rem;
-    padding: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 0.5rem;
   }
 }
-@media screen and (min-device-width: 400px) and (max-device-width: 699px) {
-  body {
-    padding: 0rem;
-  }
 
+@media only screen and (min-device-width: 510px) and (max-device-width: 900px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem;
+    height: 6rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.5rem;
+  }
   header nav .logo {
-    width: 5rem;
-    height: 1.8rem;
-    margin-left: 1rem;
-    border: 1px solid red;
+    width: 7rem;
+    height: 2.2rem;
+    margin-left: 0.4rem;
   }
   header nav .logo p {
-    color: white;
     font-size: 1rem;
   }
   header nav .logo span {
     color: red;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   header nav ul {
-    justify-content: space-between;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    width: 60%;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
   }
   header nav ul li {
-    font-size: 3.5vw;
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.8rem;
+    cursor: pointer;
   }
   header nav ul .signInBtn {
-    width: 14vw;
-    height: 1.6rem;
-    font-size: 2.8vw;
-    margin: 0;
+    width: 4rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
   }
   header nav ul .signOutBtn {
-    width: 15vw;
-    height: 1.6rem;
-    font-size: 3vw;
-    font-weight: 700;
-    margin: 0;
-    margin-right: 0.5rem;
-    padding: 0;
+    width: 4.1rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+    padding: 0 0.1rem;
   }
   header .moveName {
-    top: 80%;
-    left: 1rem;
+    position: absolute;
+    top: 70%;
+    left: 0.6rem;
     background-color: black;
     width: fit-content;
     border-radius: 1rem;
+    margin-bottom: 1rem;
   }
 
   header .moveName p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: white;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media only screen and (min-device-width: 901px) and (max-device-width: 1300px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem;
+    height: 9rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
+  header nav .logo {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+  }
+  header nav .logo p {
+    font-size: 1rem;
+  }
+  header nav .logo span {
+    font-size: 1rem;
+  }
+  header nav ul {
+    margin-left: 0.5rem;
+  }
+  header nav ul li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 3.5rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  header nav ul .signOutBtn {
+    width: 4.6rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  header .moveName {
+    position: absolute;
+    top: 70%;
+    left: 0.8rem;
+    background-color: black;
+    width: fit-content;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  header .moveName p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 0 0.5rem;
   }
 }
 /* --------------------------------Here Main -------------------------------------------------- */
@@ -389,7 +533,7 @@ main .seatContainer .chair .row {
 }
 
 main .seatContainer .chair .row span {
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
 }
 
@@ -534,19 +678,31 @@ main .btnContainer .btnContinue {
 }
 
 /* this part is for the screen and the seats */
-@media screen and (max-width: 599px) {
+@media screen and (min-device-width: 200px) and (max-device-width: 374px) {
   main {
-    padding: 1rem 0.5rem;
+    padding: 0.2rem 0.3rem;
   }
+
+  main .showTime {
+    margin-top: 0.5rem;
+  }
+  main .showTime .top {
+    font-size: 0.6rem;
+  }
+
+  main .showTime .timeTable p {
+    font-size: 0.8rem;
+  }
+
   main h2 {
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin: 1.1rem 0 0.5rem 0;
   }
   main .ticketLegend {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: 0;
-    padding-left: 10%;
+    padding-left: 0;
   }
 
   main .ticketLegend .legendContainer {
@@ -554,11 +710,11 @@ main .btnContainer .btnContinue {
     align-items: center;
   }
   main .ticketLegend .legendContainer .square {
-    margin-right: 0.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
+    margin-right: 0.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   main .screenContainer {
@@ -577,22 +733,233 @@ main .btnContainer .btnContinue {
     justify-content: center;
   }
   main .seatContainer {
-    margin-top: 2rem;
-    margin-right: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 100%;
   }
   main .seatContainer .space {
-    width: 1rem;
+    width: 0.5rem;
   }
 
   main .seatContainer .chair {
     width: 100%;
   }
+  main .seatContainer .chair .row span {
+    margin-bottom: 0.3rem;
+    font-size: 0.6rem;
+  }
+
+  main .seatContainer .chair .row .seat {
+    position: relative;
+    width: 0.9rem;
+    height: 0.9rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.7rem;
+  }
+  main .seatContainer .chair .row .rowNumber {
+    width: 0.4rem;
+    height: 1.12rem;
+    background-color: transparent;
+    font-size: 0.55rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  main .seatContainer .chair .row .seat .armLeft {
+    display: none;
+  }
+  main .seatContainer .chair .row .seat .armRight {
+    display: none;
+  }
+  main .seatContainer .chair .row .seatEmpty {
+    width: 1rem;
+  }
+
+  .unavailable {
+    background-color: red !important;
+  }
+  .premiun {
+    width: 0.9rem;
+    height: 0.9rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.7rem;
+  }
+  main .seatsSelected {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 1rem;
+  }
+  main .seatsSelected .selectedContainer .titleSelected {
+    margin-right: 0.2rem;
+    font-size: 0.6rem;
+  }
+  main .seatsSelected .selectedContainer .selected {
+    font-size: 0.6rem;
+  }
+
+  main .btnContainer .overLayBtnContinue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  main .btnContainer .btnContinue {
+    display: none;
+    width: 6rem;
+    height: 1.3rem;
+    font-size: 0.5rem;
+    font-weight: 400;
+    border: 1px solid red;
+    margin-top: 0.4rem;
+  }
 }
-@media screen and (min-device-width: 600px) and (max-device-width: 999px) {
+@media screen and (min-device-width: 375px) and (max-device-width: 600px) {
+  main {
+    padding: 0.5rem 1rem;
+  }
+
+  main .showTime {
+    margin-top: 0.6rem;
+  }
+  main .showTime .top {
+    font-size: 0.7rem;
+  }
+
+  main .showTime .timeTable p {
+    font-size: 0.95rem;
+  }
+
+  main h2 {
+    font-size: 0.8rem;
+    margin: 1.1rem 0 0.5rem 0;
+  }
+
+  main .ticketLegend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: 0;
+    padding-left: 0;
+  }
+
+  main .ticketLegend .legendContainer {
+    display: flex;
+    align-items: center;
+  }
+  main .ticketLegend .legendContainer .square {
+    margin-right: 0.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  main .screenContainer {
+    height: 2.5rem;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+  }
+  main .screenContainer .screen {
+    width: 100%;
+    margin-top: 3rem;
+    clip-path: polygon(0.3% 0%, 100% 0%, 92.3% 100%, 8.1% 100%);
+    background-color: rgb(220, 218, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .seatContainer {
+    margin-top: 1.5rem;
+    margin-right: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main .seatContainer .space {
+    width: 0.5rem;
+  }
+
+  main .seatContainer .chair {
+    width: 100%;
+  }
+  main .seatContainer .chair .row span {
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  main .seatContainer .chair .row .seat {
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.7rem;
+  }
+  main .seatContainer .chair .row .rowNumber {
+    width: 0.4rem;
+    height: 1.3rem;
+    background-color: transparent;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
+  }
+
+  main .seatContainer .chair .row .seatEmpty {
+    width: 1rem;
+  }
+
+  .premiun {
+    width: 1.3rem;
+    height: 1.1rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.7rem;
+  }
+  main .seatsSelected {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 1rem;
+  }
+  main .seatsSelected .selectedContainer .titleSelected {
+    margin-right: 0.2rem;
+    font-size: 0.6rem;
+  }
+  main .seatsSelected .selectedContainer .selected {
+    font-size: 0.6rem;
+  }
+
+  main .btnContainer .overLayBtnContinue {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  main .btnContainer .btnContinue {
+    display: none;
+    width: 8rem;
+    height: 1.3rem;
+    font-size: 0.6rem;
+    font-weight: 400;
+    border: 1px solid red;
+    margin-top: 0.4rem;
+  }
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 999px) {
   main {
     padding: 1.5rem;
   }
@@ -705,99 +1072,43 @@ main .btnContainer .btnContinue {
   }
 }
 
-/* this part is to display chosen seats at the bottom of the screen. */
-@media screen and (max-width: 450px) {
-  main .seatsSelected {
-    width: 100%;
-    flex-direction: column;
-    padding: 0rem;
-    margin-top: 1rem;
-    margin-left: 1.5rem;
-    font-size: 1rem;
-    height: 5rem;
-    align-items: start;
-  }
-
-  main .seatsSelected .selectedContainer .selected {
-    color: white;
-    font-weight: 300;
-    font-size: 0.8rem;
-  }
-
-  main .seatsSelected .btnContinue {
-    width: 8rem;
-    margin-top: 0.5rem;
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (min-device-width: 451px) and (max-device-width: 699px) {
-  main .seatsSelected {
-    width: 100%;
-    flex-direction: column;
-    align-items: start;
-    margin-top: 1rem;
-    margin-left: 1.8rem;
-  }
-  main .seatsSelected .selectedContainer .selected {
-    color: white;
-    font-weight: 300;
-    font-size: 1rem;
-  }
-  main .seatsSelected .btnContinue {
-    width: 10rem;
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-    float: left;
-  }
-}
-@media screen and (min-device-width: 700px) and (max-device-width: 1100px) {
-  main .seatsSelected {
-    margin-top: 3rem;
-  }
-
-  main .btnContainer .btnContinue {
-    width: 9.5rem;
-    height: 2rem;
-    font-size: 0.75rem;
-    border: 1px solid red;
-  }
-}
 /*--------------------Here starts the footer---------------- */
+
 footer {
-  height: 18vh;
+  height: 15vh;
   width: 100%;
-  background-color: black;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 1rem;
+  background-color: black;
 }
 
-footer .logoContainer .logo {
+footer .logo {
   width: 8rem;
   height: 3rem;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 3rem;
+  margin-left: 2rem;
   cursor: pointer;
 }
-footer .logoContainer .logo p {
+footer .logo p {
   color: white;
   font-size: 1.5rem;
 }
-footer .logoContainer .logo span {
+footer .logo span {
   color: red;
   font-size: 1.5rem;
 }
-footer .contactContainer {
+
+footer .contact {
   color: white;
   cursor: pointer;
 }
-footer .contactContainer:hover {
+footer .contact:hover {
   color: red;
 }
 
@@ -807,7 +1118,9 @@ footer .SocialMediaContainer {
   align-items: center;
   justify-content: space-between;
 }
-
+footer .SocialMediaContainer:hover {
+  color: red;
+}
 footer .SocialMediaContainer i {
   color: white;
   margin: 0 1rem;
@@ -819,7 +1132,48 @@ footer .SocialMediaContainer i:hover {
   color: red;
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  footer {
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.2rem;
+  }
+
+  footer .logo {
+    width: 3rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+
+  footer .logo p {
+    font-size: 0.7rem;
+  }
+  footer .logo span {
+    font-size: 0.7rem;
+  }
+  footer .contact {
+    font-size: 0.7rem;
+  }
+  footer .SocialMediaContainer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.2rem;
+  }
+  footer .SocialMediaContainer i {
+    color: white;
+    margin: 0rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 700px) {
   footer {
     height: 18vh;
     width: 100vw;

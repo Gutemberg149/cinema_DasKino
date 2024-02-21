@@ -150,108 +150,196 @@ header nav ul li a:hover {
   color: red;
 }
 
-@media screen and (max-width: 390px) {
-  body {
-    padding: 0rem;
-  }
+@media only screen and (min-device-width: 200px) and (max-device-width: 310px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+  header nav ul {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 9vh;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    justify-content: end;
+    margin-right: 0.3rem;
   }
   header nav .logo {
-    width: 4.5rem;
-    height: 1.6rem;
-    margin-left: 0.2rem;
-    border: 1px solid red;
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-left: 0rem;
   }
   header nav .logo p {
+    font-size: 0.4rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 0.5rem;
+  }
+  header nav ul {
+    margin-left: 0.1rem;
+    margin-right: 0;
+  }
+  header nav ul li {
+    font-size: 0.5rem;
+    font-weight: 500;
     color: white;
-    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 2.4rem;
+    height: 1.2rem;
+    font-size: 0.6rem;
+  }
+  header nav ul .signOutBtn {
+    width: 2.4rem;
+    height: 1.2rem;
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-device-width: 311px) and (max-device-width: 509px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.8rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0rem;
+  }
+  header nav .logo {
+    width: 3.5rem;
+    height: 1.7rem;
+    margin-left: 0.3rem;
+  }
+  header nav .logo p {
+    font-size: 0.7rem;
   }
   header nav .logo span {
     color: red;
     font-size: 0.9rem;
   }
   header nav ul {
-    justify-content: end;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    width: 80%;
+    margin-left: 0.4rem;
+    margin-right: 0;
   }
   header nav ul li {
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.5rem;
+    cursor: pointer;
   }
   header nav ul .signInBtn {
-    width: 12vw;
-    height: 1.6rem;
-    font-size: 2.4vw;
-    margin: 0;
+    width: 3rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
   }
   header nav ul .signOutBtn {
-    width: 13vw;
-    height: 1.6rem;
-    font-size: 2.6vw;
-    margin: 0;
-    margin-right: 0.5rem;
+    width: 3.4rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
   }
 }
-@media screen and (min-device-width: 391px) and (max-device-width: 628px) {
-  body {
-    padding: 0rem 0.5rem;
-  }
+
+@media only screen and (min-device-width: 510px) and (max-device-width: 900px) {
   header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 1.5rem 0 1.5rem;
+  }
+  header nav ul {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 9vh;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    justify-content: end;
+    margin-right: 0.5rem;
   }
-
   header nav .logo {
-    width: 5rem;
-    height: 1.8rem;
-    margin-left: 0.3rem;
-    border: 1px solid red;
+    width: 7rem;
+    height: 2.2rem;
+    margin-left: 0.4rem;
   }
   header nav .logo p {
-    color: white;
     font-size: 1rem;
   }
   header nav .logo span {
     color: red;
+    font-size: 1.1rem;
+  }
+  header nav ul {
+    margin-left: 0.5rem;
+  }
+  header nav ul li {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.8rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 4rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  header nav ul .signOutBtn {
+    width: 4.1rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 901px) and (max-device-width: 1300px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 2rem 0 3.5rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
+  header nav .logo {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+  }
+  header nav .logo p {
+    font-size: 1rem;
+  }
+  header nav .logo span {
     font-size: 1rem;
   }
   header nav ul {
-    justify-content: space-between;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    width: 70%;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
   }
   header nav ul li {
-    font-size: 3.5vw;
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
   }
   header nav ul .signInBtn {
-    width: 12vw;
-    height: 1.6rem;
-    font-size: 2.6vw;
-    margin: 0;
+    width: 3.5rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
   }
   header nav ul .signOutBtn {
-    width: 15vw;
-    height: 1.6rem;
-    font-size: 3.4vw;
-    margin: 0;
-    margin-right: 0.5rem;
+    width: 4.6rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -294,7 +382,7 @@ header nav ul li a:hover {
   margin: 2rem 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   margin-bottom: 4rem;
 }
 
@@ -342,7 +430,61 @@ header nav ul li a:hover {
   font-size: 0.8rem;
   color: rgb(222, 220, 220);
 }
-@media screen and (max-width: 600px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  body {
+    padding: 0.3rem;
+  }
+  .topContainer .playingStaus {
+    margin-bottom: 0.5rem;
+  }
+  .containerTrailer .title {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .infoContainer {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .infoContainer .InnerInfoLeft {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  .infoContainer .InnerInfoLeft .infoContainerTitle {
+    padding-bottom: 0.2rem;
+    border-bottom: 0.5px solid rgb(222, 220, 220);
+  }
+  .infoContainer .InnerInfoLeft .infoContainerTitle span {
+    font-size: 0.9rem;
+  }
+  .infoContainer .InnerInfoLeft .info {
+    margin-top: 0.8rem;
+    border-bottom: 0.5px solid rgb(222, 220, 220);
+  }
+  .infoContainer .InnerInfoLeft .info p {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+  .infoContainer .synopisContainer {
+    width: 100%;
+  }
+  .infoContainer .synopisContainer .synopisContainerTitle {
+    border-bottom: 0.5px solid rgb(222, 220, 220);
+    padding-bottom: 0.2rem;
+  }
+  .infoContainer .synopisContainer .synopisContainerTitle span {
+    font-size: 0.9rem;
+  }
+  .infoContainer .synopisContainer p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 600px) {
   body {
     padding: 0 0.5rem;
   }
@@ -353,9 +495,23 @@ header nav ul li a:hover {
     font-weight: 500;
     color: white;
   }
+  .infoContainer {
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+  .infoContainer .InnerInfoLeft .infoContainerTitle span {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .infoContainer .InnerInfoLeft .info {
+    justify-content: space-between;
+    padding-bottom: 0.4rem;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid rgb(222, 220, 220);
+  }
 
   .infoContainer .InnerInfoLeft .info p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .infoContainer .InnerInfoLeft {
     width: 47%;
@@ -363,13 +519,50 @@ header nav ul li a:hover {
   .infoContainer .synopisContainer {
     width: 47%;
   }
+  .infoContainer .synopisContainer .synopisContainerTitle span {
+    font-size: 1rem;
+  }
 }
+@media only screen and (min-device-width: 601px) and (max-device-width: 750px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  .containerTrailer .title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+  }
+  .infoContainer {
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+  .infoContainer .InnerInfoLeft {
+    width: 47%;
+  }
+  .infoContainer .InnerInfoLeft .infoContainerTitle span {
+    font-size: 1.2rem;
+  }
+  .infoContainer .InnerInfoLeft .info {
+    justify-content: space-between;
+    padding-bottom: 0.4rem;
+    margin-top: 0.5rem;
+    border-bottom: 1px solid rgb(222, 220, 220);
+  }
+  .infoContainer .InnerInfoLeft .info p {
+    font-size: 0.8rem;
+  }
+
+  .infoContainer .synopisContainer {
+    width: 47%;
+  }
+  .infoContainer .synopisContainer .synopisContainerTitle span {
+    font-size: 1.2rem;
+  }
+}
+
 /* -------------------------ticket dates section ------------------------------- */
-
-Title {
-  margin: 1.5rem 0rem;
-}
-
 .findTicketsTitle h4 {
   font-size: 1.3rem;
   color: rgb(219, 218, 218);
@@ -384,7 +577,7 @@ Title {
   margin-bottom: 0;
 }
 .chooseDateSection {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.1rem;
   color: red;
   background-color: rgba(0, 0, 0, 0.528);
@@ -395,7 +588,7 @@ Title {
 
 .chooseTime1,
 .chooseTime2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.1rem;
   color: red;
   background-color: rgba(32, 31, 31, 0.631);
@@ -466,20 +659,27 @@ Title {
   font-weight: 600;
 }
 
-@media screen and (max-width: 600px) {
-  .chooseDateSection {
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  .playingStatus {
+    font-size: 0.6em;
+  }
+  .findTicketsTitle h4 {
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
     font-weight: 500;
-    font-size: 1rem;
+  }
+  .containerChoose {
+    height: 1rem;
+  }
+  .chooseDateSection {
+    background-color: rgba(0, 0, 0, 0.587);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
   }
 
-  .chooseTime1,
-  .chooseTime2 {
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-  }
   .dateConteinar {
-    margin: 0rem 0;
+    margin: 0rem 0 1.5rem 0;
   }
   .dateConteinar .date {
     width: 5rem;
@@ -487,11 +687,6 @@ Title {
   }
   .dateConteinar .date .weekDay {
     font-size: 0.8rem;
-  }
-  .dateConteinar .date .monthBox .month {
-    color: rgb(221, 13, 13);
-    margin-right: 0.3rem;
-    font-size: 0.7rem;
   }
   .dateConteinar .date .monthBox .month {
     color: rgb(193, 191, 191);
@@ -507,6 +702,53 @@ Title {
 
   .findTicketsTitle {
     margin-bottom: 0;
+  }
+  .highLight {
+    color: rgb(255, 255, 255) !important;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 600px) {
+  .playingStatus {
+    font-size: 0.8em;
+  }
+  .findTicketsTitle {
+    margin-bottom: 0;
+  }
+
+  .containerChoose {
+    margin-bottom: 0.5rem;
+  }
+
+  .chooseDateSection {
+    background-color: rgba(0, 0, 0, 0.587);
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 1.1rem;
+  }
+
+  .dateConteinar {
+    margin: 0rem 0 1rem 0;
+  }
+
+  .dateConteinar .date {
+    width: 5rem;
+    margin: 0 1rem 0.5rem 1rem;
+  }
+  .dateConteinar .date .weekDay {
+    font-size: 0.9rem;
+  }
+  .dateConteinar .date .monthBox .month {
+    color: rgb(193, 191, 191);
+    margin-right: 0.3rem;
+    font-size: 0.9rem;
+  }
+
+  .dateConteinar .date .monthBox .dayMonth {
+    color: rgb(193, 191, 191);
+    margin-right: 0.4rem;
+    font-size: 0.9rem;
   }
   .highLight {
     color: rgb(255, 255, 255) !important;
@@ -610,7 +852,7 @@ Title {
   justify-content: space-between;
   cursor: pointer;
   border-radius: 1rem;
-  border: 1px solid rgba(255, 0, 0, 0.377);
+  border: 1px solid rgba(248, 15, 15, 0.966);
 }
 
 .goToSeat p {
@@ -634,7 +876,71 @@ Title {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  .chooseTime1,
+  .chooseTime2 {
+    background-color: rgba(0, 0, 0, 0.587);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .timeTable .bottomTimeTable {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
+    padding: 0;
+  }
+  .timeTable .bottomTimeTable .boxtime {
+    margin-right: 0.3rem;
+    width: 4.5rem;
+    height: 2.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .goToSeat {
+    width: 10rem;
+    height: 1.5rem;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+  }
+
+  .goToSeat p {
+    font-size: 0.7rem;
+    color: rgb(248, 244, 241);
+  }
+  .topTimeTable .titleCpontainer {
+    margin-bottom: 1rem;
+    width: 9rem;
+  }
+  .topTimeTable .titleCpontainer h4 {
+    font-size: 0.7rem;
+  }
+
+  .topTimeTable .titleCpontainer i {
+    font-size: 0.7rem;
+  }
+  .address {
+    width: 12rem;
+  }
+  .address P {
+    font-size: 0.7rem;
+  }
+  .icons {
+    width: 12rem;
+    margin-top: 0.5rem;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 600px) {
+  .chooseTime1,
+  .chooseTime2 {
+    background-color: rgba(0, 0, 0, 0.587);
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin: 1.1rem 0;
+  }
+
   .topTimeTable .titleCpontainer {
     margin-bottom: 1rem;
   }
@@ -668,9 +974,10 @@ Title {
   width: 100%;
   display: flex;
   align-items: center;
+  background-color: black;
 }
 footer {
-  height: 18vh;
+  height: 15vh;
   width: 100%;
   color: white;
   display: flex;
@@ -726,7 +1033,48 @@ footer .SocialMediaContainer i:hover {
   color: red;
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  footer {
+    height: 8vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.2rem;
+  }
+
+  footer .logo {
+    width: 3rem;
+    height: 2rem;
+    margin-left: 0rem;
+  }
+
+  footer .logo p {
+    font-size: 0.7rem;
+  }
+  footer .logo span {
+    font-size: 0.7rem;
+  }
+  footer .contact {
+    font-size: 0.7rem;
+  }
+  footer .SocialMediaContainer {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0.2rem;
+  }
+  footer .SocialMediaContainer i {
+    color: white;
+    margin: 0rem;
+    font-size: 0.7rem;
+    cursor: pointer;
+  }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 700px) {
   footer {
     height: 18vh;
     width: 100vw;

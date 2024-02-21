@@ -143,108 +143,189 @@ header .bottom_header .bottom_header_left .btn_moreInfo {
   background-color: red;
   cursor: pointer;
 }
-@media screen and (max-width: 390px) {
-  body {
-    padding: 0rem;
-  }
+@media only screen and (min-device-width: 200px) and (max-device-width: 310px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-top: 0rem;
+  }
+  header nav ul {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 9vh;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    justify-content: end;
+    margin-right: 0.3rem;
   }
   header nav .logo {
-    width: 4.5rem;
-    height: 1.6rem;
-    margin-left: 0.2rem;
-    border: 1px solid red;
+    width: 2.5rem;
+    height: 1.5rem;
+    margin-left: 0rem;
   }
   header nav .logo p {
+    font-size: 0.4rem;
+  }
+  header nav .logo span {
+    color: red;
+    font-size: 0.5rem;
+  }
+
+  header nav ul li {
+    font-size: 0.5rem;
+    font-weight: 500;
     color: white;
-    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 2.4rem;
+    height: 1.2rem;
+    font-size: 0.6rem;
+  }
+  header nav ul .signOutBtn {
+    width: 2.4rem;
+    height: 1.2rem;
+    font-size: 0.5rem;
+  }
+}
+@media only screen and (min-device-width: 311px) and (max-device-width: 509px) {
+  header {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0rem;
+  }
+  header nav .logo {
+    width: 3.5rem;
+    height: 1.7rem;
+    margin-left: 0.3rem;
+  }
+  header nav .logo p {
+    font-size: 0.7rem;
   }
   header nav .logo span {
     color: red;
     font-size: 0.9rem;
   }
   header nav ul {
-    justify-content: end;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    width: 80%;
+    margin-left: 0.4rem;
+    margin-right: 0;
   }
   header nav ul li {
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.5rem;
+    cursor: pointer;
   }
   header nav ul .signInBtn {
-    width: 12vw;
-    height: 1.6rem;
-    font-size: 2.4vw;
-    margin: 0;
+    width: 3rem;
+    height: 1.4rem;
+    font-size: 0.7rem;
   }
   header nav ul .signOutBtn {
-    width: 13vw;
-    height: 1.6rem;
-    font-size: 2.6vw;
-    margin: 0;
-    margin-right: 0.5rem;
+    width: 3.4rem;
+    height: 1.3rem;
+    font-size: 0.7rem;
   }
 }
-@media screen and (min-device-width: 391px) and (max-device-width: 628px) {
-  body {
-    padding: 0rem 0.5rem;
-  }
+
+@media only screen and (min-device-width: 510px) and (max-device-width: 900px) {
   header {
+    display: flex;
+    align-items: center;
+    margin: 0rem;
+  }
+  header nav ul {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 9vh;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    justify-content: end;
+    margin-right: 0.5rem;
   }
-
   header nav .logo {
-    width: 5rem;
-    height: 1.8rem;
-    margin-left: 0.3rem;
-    border: 1px solid red;
+    width: 7rem;
+    height: 2.2rem;
+    margin-left: 0.4rem;
   }
   header nav .logo p {
-    color: white;
     font-size: 1rem;
   }
   header nav .logo span {
     color: red;
+    font-size: 1.1rem;
+  }
+  header nav ul {
+    margin-left: 0.5rem;
+  }
+  header nav ul li {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 0.8rem;
+    cursor: pointer;
+  }
+  header nav ul .signInBtn {
+    width: 4rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  header nav ul .signOutBtn {
+    width: 4.1rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-device-width: 901px) and (max-device-width: 1300px) {
+  header {
+    display: flex;
+    align-items: center;
+    margin: 0rem;
+  }
+  header nav ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 0.3rem;
+  }
+  header nav .logo {
+    width: 6rem;
+    height: 2rem;
+    margin-left: 0.4rem;
+  }
+  header nav .logo p {
+    font-size: 1rem;
+  }
+  header nav .logo span {
     font-size: 1rem;
   }
   header nav ul {
-    justify-content: space-between;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    width: 70%;
-    margin-left: 2rem;
+    margin-left: 0.5rem;
   }
   header nav ul li {
-    font-size: 3.5vw;
-    font-weight: 600;
-    margin-right: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 1rem;
+    cursor: pointer;
   }
   header nav ul .signInBtn {
-    width: 12vw;
-    height: 1.6rem;
-    font-size: 2.6vw;
-    margin: 0;
+    width: 3.5rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
   }
   header nav ul .signOutBtn {
-    width: 15vw;
-    height: 1.6rem;
-    font-size: 3.4vw;
-    margin: 0;
-    margin-right: 0.5rem;
+    width: 4.6rem;
+    height: 1.4rem;
+    font-size: 0.9rem;
   }
 }
 /* --------------------------------------Here Main--------------------------------------------------------- */
@@ -280,10 +361,6 @@ main .ticketContainer .right {
   width: 30%;
 }
 
-.right img {
-  width: 100%;
-  padding: 0.5rem 0.5rem 0 0rem;
-}
 .right .moveInfo {
   padding-right: 1rem;
 }
@@ -356,7 +433,38 @@ main .ticketContainer .right {
   word-spacing: 2px;
 }
 
-@media screen and (max-width: 499px) {
+@media only screen and (min-device-width: 200px) and (max-device-width: 374px) {
+  main {
+    padding: 0.5rem;
+  }
+  main h1 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  main .ticketContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 97%;
+    padding: 0.5rem 0.2rem;
+  }
+  main .ticketContainer .left {
+    width: 90%;
+  }
+
+  main .ticketContainer .right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5;
+    margin-top: 1rem;
+  }
+  .right .moveInfo {
+    padding-right: 1rem;
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 610px) {
   main {
     padding: 0.5rem;
   }
@@ -375,56 +483,44 @@ main .ticketContainer .right {
     width: 90%;
   }
   main .ticketContainer .right {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 0;
     margin-top: 1rem;
   }
-  .right img {
-    width: 7rem;
-  }
-}
-@media screen and (min-device-width: 500px) and (max-device-width: 599px) {
-  main {
-    padding: 0.5rem;
-    height: 100vh;
-  }
-  main h1 {
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-  }
-
-  main .ticketContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    padding: 0.5rem 0.2rem;
-    height: 72vh;
-  }
-  .left img {
-    width: 70%;
-  }
-
   .right .moveInfo {
-    width: 60%;
+    padding: 0 2rem;
+    width: 100%;
   }
-  main .ticketContainer .left {
-    width: 90%;
+  .right .moveInfo .titleContainer p {
+    font-size: 1rem;
+    font-weight: 400;
   }
-  main .ticketContainer .right {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin-top: 1rem;
+  .right .moveInfo .titleContainer .title {
+    font-size: 0.9rem;
+    font-weight: 500;
   }
-  .right img {
-    width: 7rem;
+  .right .moveInfo .dateContainer p {
+    font-size: 0.9rem;
+  }
+  .right .moveInfo .dateContainer .date {
+    font-size: 0.9rem;
+  }
+
+  .right .moveInfo .timeContainer p {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .right .moveInfo .seatsContainer p {
+    font-size: 0.9rem;
+  }
+
+  .right .moveInfo .seatsContainer .seats {
+    font-size: 0.8rem;
   }
 }
+
 /* --------------------------------Here starts the Footer -------------------------------------------------- */
 footer {
   height: 10vh;
